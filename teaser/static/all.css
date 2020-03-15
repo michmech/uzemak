@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext');
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; padding: 0;
+  line-height: 1.3em;
+  font-size: 1em;
+  background-color: #222222;
+  color: #111111;
+}
+a {color: #336699; text-decoration: none;}
+
+div.envelope {
+  background-color: #ffffff;
+}
+div.invelope {
+  position: relative;
+  max-width: 1200px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 50px;
+}
+@media (max-width: 800px){
+  div.invelope {
+    padding: 20px;
+  }
+}
+
+div.header {
+}
+div.header > a.obr {
+  display: block;
+  width: 113px; height: 50px;
+  background-image: url(obr.jpg);
+}
+div.header > a.obr:hover {
+  position: relative;
+  top: -1px;
+}
+div.header > span.uzemak {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+div.obrys {
+  max-width: 400px;
+  height: 400px;
+  background-image: url(obrys.svg); background-repeat: no-repeat; background-size: 100%; background-position: center;
+  margin: -25px auto 15px auto;
+}
+@media (max-width: 800px){
+  div.obrys {
+  }
+}
+
+div.countdown {
+  text-align: center;
+  padding-top: 120px;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+div.countdown div.title {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+div.countdown div.colon {
+  display: inline-block;
+  font-size: 1.25em;
+}
+div.countdown div.block {
+  display: inline-block;
+}
+div.countdown div.block span.colon {
+  font-weight: bold;
+  margin: 0px 2px;
+  font-size: 1.25em;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+div.countdown div.block span.digit {
+  background-color: #666666;
+  font-weight: bold;
+  padding: 5px;
+  color: #ffffff;
+  margin: 0px 2px;
+  border-radius: 2px;
+  font-size: 1.25em;
+}
+div.countdown div.block div.legend {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+div.kdy {
+}
+
+div.footer {
+  color: #ffffff;
+}
+div.footer > div.inside {
+  max-width: 1200px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 50px 50px 20px 50px;
+  text-align: right;
+}
+div.footer a {
+  color: #ffffff;
+}
+div.footer div.claim {
+  font-size: 1.45em;
+  line-height: 1.25em;
+}
+div.footer div.signoff {
+  margin-top: 10px;
+}

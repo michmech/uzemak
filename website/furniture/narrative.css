@@ -1,0 +1,22 @@
+div.narrative {margin-right: 30px; margin-bottom: 40px;}
+.narrative a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
+.narrative a:hover {color: #6699cc;}
+
+
+.narrative h1 {
+  line-height: 1.75em;
+  margin-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
+.narrative h2 {
+  line-height: 1.75em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.narrative p {
+  line-height: 1.75em;
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
