@@ -1,22 +1,41 @@
-div.narrative {margin-right: 30px; margin-bottom: 40px;}
 .narrative a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
 .narrative a:hover {color: #6699cc;}
 
-
-.narrative h1 {
-  line-height: 1.75em;
-  margin-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0.5em;
+.narrative span.titleIcon {
+  float: left;
+  text-align: center;
+  margin-right: 30px;
+  background-color: #336699;
+  color: #fff9c2;
+  width: 60px; height: 60px;
+  border-radius: 60px;
+  font-size: 30px;
 }
+.narrative span.titleIcon i {
+  margin-top: 15px;
+}
+.narrative p.overtitle {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.narrative h1 {
+  line-height: 1.25em;
+  margin-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+
 .narrative h2 {
   line-height: 1.75em;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
+
 
 .narrative p {
   line-height: 1.75em;
   margin-top: 0px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }

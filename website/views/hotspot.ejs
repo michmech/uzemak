@@ -8,22 +8,23 @@
     <link type="text/css" rel="stylesheet" href="/all.css" />
     <link type="text/css" rel="stylesheet" href="/all1200.css" media="(max-width: 1200px)"/>
     <link type="text/css" rel="stylesheet" href="/all800.css" media="(max-width: 800px)"/>
+    <link type="text/css" rel="stylesheet" href="/narrative.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/all.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta property="og:image" content="http://www.uzemniplanbrno.cz/sharingpreview.png" />
     <meta name="twitter:image" content="http://www.uzemniplanbrno.cz/sharingpreview.png" />
-    <title>Územní plán pro Brno</title>
-    <meta property="og:title" content="Územní plán pro Brno" />
+    <title><%=metadata.title%></title>
+    <meta property="og:title" content="<%=metadata.title%>" />
     <meta property="og:site_name" content="Územní plán pro Brno" />
-    <meta name="twitter:title" content="Územní plán pro Brno" />
+    <meta name="twitter:title" content="<%=metadata.title%>" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta property="og:description" content="" />
     <meta name="twitter:description" content="" />
-    <meta property="og:url" content="http://www.uzemniplanbrno.cz/" />
-    <meta name="twitter:url" content="http://www.uzemniplanbrno.cz/" />
+    <meta property="og:url" content="http://www.uzemniplanbrno.cz/mapa/<%-nick%>/" />
+    <meta name="twitter:url" content="http://www.uzemniplanbrno.cz/mapa/<%-nick%>/" />
   </head>
   <body>
 
@@ -56,71 +57,26 @@
 
     <div class="envelope">
       <div class="inside">
-        <div class="twothirds">
 
-          <div class="para">
-            Je rok 2020 a město Brno připravuje nový <b>uzemní plán</b>.
-            Územní plán je důležitý.
-            Definuje totiž, jestli vám u domu vyroste <b>betonové parkoviště</b>,
-            jak daleko to budete mít s dětmi nebo s pejskem <b> do parku</b>,
-            jestli vám zruší <b>zahrádku</b> nebo zastaví <b>vnitroblok</b>.
-            To vše se rozhoduje v územním plánu.
-          </div>
-          <div class="para">
-            Proto spolek <b>Otevřené Brno</b> vyrobil tyhle stránky.
-            Nabízíme tady návody, <a href="/jak-cist-uzemni-plan/">jak územní plán číst</a>
-            a <a href="/jak-podat-namitku-k-uzemnimu-planu/">jak podávat námitky</a>.
-            Na naší <a href="/mapa/">mapě žhavých bodů</a> shromažďujeme údaje o místech, kterých se územní plán výrazně dotkne.
-            Nabízíme <a href="/odbornici-na-uzemni-plan/">konzultace s odborníky</a> na právo, stavby, dopravu či životní prostředí.
-            Ptejte se nás – <b>o&nbsp;územním plánu víme vše</b>.
-          </div>
+        <div class="breadcrumbs">
+          <a class="step" href="/"><i class="fas fa-home"></i></a>
+          <span class="divider"><i class="fas fa-chevron-right"></i></span>
+          <a class="step" href="/mapa/">Mapa žhavých bodů</a>
+          <span class="divider"><i class="fas fa-chevron-right"></i></span>
+          <span class="step"><%=metadata.title%></span>
+        </div>
 
-          <div class="signposts">
-            <a class="signpost" href="/jak-cist-uzemni-plan/">
-              <span class="icon"><i class="fas fa-book-reader"></i></span>
-              <span class="overtitle">NÁVOD</span>
-              <span class="title">Jak číst územní plán</span>
-            </a>
-            <a class="signpost" href="/jak-podat-namitku-k-uzemnimu-planu/">
-              <span class="icon"><i class="fas fa-comment-alt"></i></span>
-              <span class="overtitle">NÁVOD</span>
-              <span class="title">Jak podat námitku k&nbsp;územnímu plánu</span>
-            </a>
-            <a class="signpost" href="/odbornici-na-uzemni-plan/">
-              <span class="icon"><i class="fas fa-phone"></i></span>
-              <span class="overtitle">KONZULTACE</span>
-              <span class="title">Zeptejte se odborníků na územní plán</span>
-            </a>
-            <div class="clear"></div>
+        <div class="maepchen hotspotPage">
+          <a href="/mapa/" class="target" style="top: 50%; left: 50%; margin-left: -25px; margin-top: -25px;"><i class="fas fa-fire"></i></a>
+        </div>
+
+        <div class="singlecolumn">
+
+          <div class="narrative">
+            <%-html%>
           </div>
 
           <div class="clear"></div>
-        </div>
-        <div class="onethird">
-
-          <a class="maplogo" href="/mapa/">
-            <span class="line"><span>Mapa žhavých bodů</span></span>
-            <span class="outline"></span>
-            <span class="icon"><i class="fas fa-fire"></i></span>
-          </a>
-
-          <div class="overfeature">
-            <span class="intertitle">Žhavý bod pro tento moment</span>
-            <a class="reload" href="#"><i class="fas fa-sync-alt"></i> jiný</a>
-          </div>
-
-          <div class="feature">
-            <div class="maepchen">
-              <a href="/mapa/pr-parkoviste-purkynova/" class="target" style="top: 50%; left: 50%; margin-left: -25px; margin-top: -25px;"><i class="fas fa-fire"></i></a>
-            </div>
-            <div class="title"><a class="red" href="/mapa/pr-parkoviste-purkynova/">P+R parkoviště na Purkyňově</a></div>
-            <div class="blurb">
-              Navrhovaný územní plán umožní v Králově Poli stavbu zatím největšího parkovacího domu pro kombinované účely
-              pro 441 aut a současně i venkovního parkoviště pro 89 aut bezprostředně vedle parkovacího domu — to vše na ploše, kde je dnes zeleň.
-              <a href="/mapa/pr-parkoviste-purkynova/">Víc&nbsp;informací&nbsp;»</a>
-            </div>
-          </div>
-
         </div>
         <div class="clear"></div>
       </div>

@@ -3,20 +3,9 @@ div.header a.maplogo {
 }
 
 
-div.menu {
-  display: none;
+div.overfooter div.inside {
+  margin-left: 15px;
 }
-
-
-div.wanter {
-  width: auto;
-  float: none;
-  padding: 0px 0px 0px 0px;
-}
-div.wanter.long {
-  min-height: auto;
-}
-
 
 div.footer div.inside {
   margin-left: 15px;
@@ -28,4 +17,15 @@ div.footer div.inside div.right {
   float: none;
   text-align: left;
   margin-top: 40px;
+}
+
+a.signpost {
+  /* box-sizing: border-box;
+  padding: 0px 5px;
+  display: block; */
+  float: none;
+  /* text-align: center;
+  color: #000000; */
+  width: auto;
+  margin-bottom: 60px;
 }

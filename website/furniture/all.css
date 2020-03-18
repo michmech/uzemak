@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap&subset=latin-ext');
 body {font-family: 'Montserrat', sans-serif; background-color: #333333; margin: 0; padding: 0; line-height: 1.3em; font-size: 1em; color: #000000;}
 a {color: #336699; text-decoration: none;}
-.blurb a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
-.blurb a:hover {color: #6699cc;}
+.blurb a, .para a, .overfooter a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
+.blurb a:hover, .para a:hover, .overfooter a:hover {color: #6699cc;}
 
 div.stripe {
   background-color: #dddddd;
@@ -52,18 +52,18 @@ div.header a.logo span.line > span {
   display: inline-block;
   font-weight: bold;
   background-color: #333333;
-  color: #ffffff;
+  color: #fff9c2;
   border-radius: 2px;
   padding: 10px 60px 10px 20px;
 }
 div.header a.logo:hover span.line > span {
-  color: #99ccff;
+  color: #faf2a1;
 }
 
 div.header a.maplogo {
   display: block;
   position: absolute; top: -10px; right: -30px;
-  height: 140px;
+  height: 100px;
   box-sizing: border-box;
   padding-top: 100px;
 }
@@ -75,30 +75,36 @@ div.header a.maplogo span.line {
   display: block;
   font-size: 1em;
   margin: 0px 0px 3px 0px;
+  white-space: nowrap;
 }
 div.header a.maplogo span.line > span {
   display: inline-block;
   font-weight: bold;
   background-color: #444444;
-  color: #ffffff;
+  color: #fff9c2;
   border-radius: 2px;
   padding: 5px 20px 5px 20px;
 }
 div.header a.maplogo span.line.line1 > span {
-  padding-right: 150px;
+  padding-right: 100px;
 }
 div.header a.maplogo span.line.line2 > span {
-  padding-right: 90px;
-}
-div.header a.maplogo span.line.line3 > span {
-  padding-right: 100px;
+  padding-right: 70px;
 }
 div.header a.maplogo span.outline {
   background-image: url(/obrys.svg); background-position: center; background-size: contain; background-repeat: no-repeat;
   position: absolute; top: 0px; right: 0px; bottom: 0px; width: 200px;
 }
+div.header a.maplogo span.icon {
+  display: block;
+  position: absolute; top: 35px; right: 85px;
+  color: #e427a7;
+  font-size: 25px;
+}
+div.header a.maplogo span.icon i {
+}
 div.header a.maplogo:hover span.line > span {
-  color: #99ccff;
+  color: #faf2a1;
 }
 div.header a.maplogo:hover span.outline {
   top: -1px; right: -1px; bottom: -1px; width: 202px;
@@ -125,6 +131,10 @@ div.envelope > div.inside > div.onethird {
   box-sizing: border-box;
   padding-left: 30px;
 }
+div.envelope > div.inside > div.singlecolumn {
+  max-width: 800px;
+  margin: 100px auto 0px auto;
+}
 div.envelope > div.inside div.clear {
   clear: both;
 }
@@ -137,7 +147,7 @@ div.overfeature {
   color: #333333;
 }
 div.overfeature span.intertitle {
-  font-size: 1.25em;
+  font-size: 1.1em;
   color: #000000;
 }
 div.overfeature a.reload {
@@ -154,18 +164,10 @@ div.overfeature a.reload i {
   margin-right: 0px;
 }
 div.feature {
-  margin-top: 30px;
-}
-div.feature div.maepchen {
-  width: 100%;
-  height: 200px;
-  background-image: url(/maepchen.png);
-  background-position: center;
-  border-radius: 2px;
-  position: relative;
+  margin-top: 20px;
 }
 div.feature div.title {
-  margin-top: 45px;
+  margin-top: 25px;
   font-size: 1.5em;
   line-height: 1.5em;
 }
@@ -176,14 +178,60 @@ div.feature div.title a:hover {
   color: #336699;
 }
 div.feature div.blurb {
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.75em;
 }
 
-span.target {
+div.maepchen {
+  width: 100%;
+  height: 200px;
+  background-image: url(/maepchen.png);
+  background-position: center;
+  border-radius: 4px;
+  position: relative;
+  border: 5px solid #fff9c2;
+  box-sizing: border-box;
+}
+div.maepchen.hotspotPage {
+  height: 300px;
+  margin-bottom: -50px;
+}
+.target {
   position: absolute;
-  display: block; width: 50px; height: 50px;
-  background-image: url(/target.svg); background-position: center; background-size: contain; background-repeat: no-repeat;
+  display: block; width: 60px; height: 60px;
+  box-sizing: border-box;
+  color: #e427a7;
+  background-color: #ffffff;
+  border-radius: 50px;
+  font-size: 30px;
+  border: 5px solid #e427a7;
+  box-shadow: 0px 0px 10px #333333;
+}
+.target > i {
+  position: absolute;
+  top: 9px; left: 14px;
+}
+a.target:hover {
+  box-shadow: 0px 0px 10px #000000;
+
+}
+
+div.overfooter {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+div.overfooter div.inside {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px 0px;
+  line-height: 1.5em;
+  padding-right: 300px;
+  box-sizing: border-box;
+}
+div.overfooter div.inside i {
+  margin-right: 0.5em;
 }
 
 div.footer {
@@ -194,7 +242,7 @@ div.footer {
 div.footer div.inside {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 40px 0px;
+  padding: 30px 0px;
 }
 div.footer div.inside div.left {
   float: left;
@@ -212,6 +260,10 @@ div.footer div.slogan {
 }
 div.footer div.line {
   margin: 0px 0px 0.5em 0px;
+}
+div.footer div.line.sitetitle {
+  font-weight: bold;
+  margin-bottom: 1.5em;
 }
 div.footer a {
   color: #ffffff;
@@ -232,65 +284,56 @@ div.footer a:hover {
 }
 
 div.para {
+  font-size: 1em;
   line-height: 1.75em;
   padding-right: 30px;
+  margin-bottom: 20px;
 }
 
-div.menu {
-  margin-top: 30px;
-  font-size: 1.25em;
-  line-height: 1.5em;
-}
-div.menu.pagefinal {
-  margin-top: 80px;
-}
-div.menu a {
-  color: #cccccc;
-  margin-right: 1em;
-  white-space: nowrap;
-}
-div.menu a:hover {
-  color: #000000;
-}
-div.menu a.current {
-  color: #000000;
-}
-
-div.wanter {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
-  padding: 0px 40px 0px 0px;
-  margin-top: 40px;
-}
-div.wanter.long {
-  min-height: 9em;
-}
-div.wanter div.title {
-  display: block;
-  font-size: 1.25em;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ffea73;
+div.signposts {
+  margin-top: 60px;
   margin-left: -5px;
-  padding-left: 5px;
-  line-height: 1.75em;
+  margin-right: 15px;
 }
-div.wanter div.title a {
-  color: inherit;
+div.signposts > div.clear {
+  clear: left;
 }
-div.wanter div.title a:hover {
-  color: #336699;
-}
-div.wanter div.blurb {
+a.signpost {
+  box-sizing: border-box;
+  padding: 0px 5px;
   display: block;
-  margin-top: 10px;
-  line-height: 1.75em;
+  float: left;
+  text-align: center;
+  color: #000000;
+  width: 33%;
 }
-div.wanter div.blurb i {
-  background-color: #fff9da;
-  padding: 1px 3px;
-  color: #333333;
-  font-style: normal;
+a.signpost span.icon {
+  display: inline-block;
+  background-color: #336699;
+  color: #fff9c2;
+  width: 60px; height: 60px;
+  border-radius: 60px;
+  font-size: 30px;
+}
+a.signpost span.icon i {
+  margin-top: 15px;
+}
+a.signpost span.overtitle {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+}
+a.signpost span.title {
+  margin-top: 5px;
+  display: block;
+  font-size: 1.15em;
+  line-height: 1.35em;
+}
+a.signpost:hover {
+  color: #003366;
+}
+a.signpost:hover span.icon {
+  color: #faf2a1;
 }
 
 div.breadcrumbs {
@@ -305,13 +348,13 @@ div.breadcrumbs a.step:hover {
   color: #336699;
 }
 div.breadcrumbs .step {
-  white-space: nowrap;
 }
 div.breadcrumbs span.divider {
   margin: 0px 0.5em;
   color: #999999;
 }
 
-div.endmark {
-  color: #999999;
+div.narrative {
+  margin-bottom: 40px;
+  margin-top: 50px;
 }

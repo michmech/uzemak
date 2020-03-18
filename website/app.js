@@ -29,12 +29,23 @@ app.get("/", function(req, res){
   res.render("home.ejs", {});
 });
 
-//Narrative:
+//Narrative page:
 const appNarrative=require("./app-narrative.js");
 app.get("/:nick/", function(req, res){
   var nick=req.params.nick;
   if(appNarrative.nicks.indexOf(nick)>-1){
     appNarrative.render(req, res, nick);
+  } else {
+    do404(req, res);
+  }
+});
+
+//Hotspot page:
+const appHotspot=require("./app-hotspot.js");
+app.get("/mapa/:nick/", function(req, res){
+  var nick=req.params.nick;
+  if(appHotspot.nicks.indexOf(nick)>-1){
+    appHotspot.render(req, res, nick);
   } else {
     do404(req, res);
   }

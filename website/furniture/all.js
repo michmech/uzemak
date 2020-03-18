@@ -1,6 +1,6 @@
 //temporarily disables hyperlinks that do not work yet
 function temporaryDisable(){
-  var hrefs=["#", "mapa", "mapa/chci-nahlasit-lokalitu", "mapa/pr-parkoviste-purkynova", "kdo-jsme", "propojeni", "chci-vas-podporit", "chci-radu-odbornika", "jak-se-stat-zastupcem-verejnosti", "jak-cist-uzemni-plan", "chci-se-zorientovat", "chci-o-hodne-vic-informaci"];
+  var hrefs=["#", "mapa"];
   $("a").each(function(){
     var $a=$(this);
     var href=$a.attr("href").replace(/^\//, "").replace(/\/$/, "");
@@ -10,20 +10,5 @@ function temporaryDisable(){
         e.preventDefault();
       });
     }
-  });
-}
-
-//sets up on-click events for the wanter menu
-function wanters(){
-  $(".menu a").attr("href", "javascript:void(null)");
-  $(".menu a").on("click", function(e){
-    var $a=$(e.delegateTarget);
-    var category=$a.attr("category");
-
-    $(".menu a").removeClass("current");
-    $a.addClass("current");
-
-    $(".wanter").hide();
-    $('.wanter[categories*="'+category+'"]').slideDown();
   });
 }
