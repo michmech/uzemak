@@ -1,5 +1,7 @@
 ---
+latlon: [49.2264625, 16.5834147]
 title: P+R parkoviště na Purkyňově
+blurb: Navrhovaný územní plán umožní v Králově Poli stavbu zatím největšího parkovacího domu pro kombinované účely pro 441 aut a současně i venkovního parkoviště pro 89 aut bezprostředně vedle parkovacího domu — to vše na ploše, kde je dnes zeleň.
 ---
 
 # P+R parkoviště na Purkyňově

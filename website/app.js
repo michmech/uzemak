@@ -24,13 +24,35 @@ app.get(/^\/.*$/, function(req, res, next) {
   }
 });
 
-//Home:
+//Home page:
 app.get("/", function(req, res){
   res.render("home.ejs", {});
 });
 
-//Narrative page:
+//------
+
+const appHotspot=require("./app-hotspot.js");
+
+//Hotspot page:
+app.get("/mapa/:nick/", function(req, res){
+  var nick=req.params.nick;
+  if(appHotspot.nicks.indexOf(nick)>-1){
+    appHotspot.render(req, res, nick);
+  } else {
+    do404(req, res);
+  }
+});
+
+//Random hotspot for the home page:
+app.get("/feature.json", function(req, res){
+  appHotspot.random(req, res, req.query.not);
+});
+
+//------
+
 const appNarrative=require("./app-narrative.js");
+
+//Narrative page:
 app.get("/:nick/", function(req, res){
   var nick=req.params.nick;
   if(appNarrative.nicks.indexOf(nick)>-1){
@@ -40,16 +62,8 @@ app.get("/:nick/", function(req, res){
   }
 });
 
-//Hotspot page:
-const appHotspot=require("./app-hotspot.js");
-app.get("/mapa/:nick/", function(req, res){
-  var nick=req.params.nick;
-  if(appHotspot.nicks.indexOf(nick)>-1){
-    appHotspot.render(req, res, nick);
-  } else {
-    do404(req, res);
-  }
-});
+
+//------
 
 //404:
 function do404(req, res){
