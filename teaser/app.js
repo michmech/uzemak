@@ -21,7 +21,7 @@ console.log("Process ID "+process.pid+" is now listening on port number "+PORT+"
 //Utilities
 function timeLeft(){
   var startDate=new Date();
-  var endDate=new Date("2020-03-19T11:00:00.000+00:00");
+  var endDate=new Date("2020-03-23T11:00:00.000+00:00");
   var diff=endDate-startDate;
   var days=Math.floor(diff/1000/60/60/24);
     diff-=days*1000*60*60*24;
