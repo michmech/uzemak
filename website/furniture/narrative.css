@@ -11,6 +11,9 @@
   border-radius: 60px;
   font-size: 30px;
 }
+.narrative span.titleIcon.prominent {
+  background-color: #e427a7;
+}
 .narrative span.titleIcon i {
   margin-top: 15px;
 }

@@ -8,7 +8,6 @@ const nicks=[
   "historie-a-budoucnost-uzemniho-planu",
   "jak-cist-uzemni-plan",
   "jak-podat-namitku-k-uzemnimu-planu",
-  "odbornici-na-uzemni-plan",
   "ochrana-osobnich-udaju"
 ];
 

@@ -3,6 +3,9 @@ const app=express();
 const path=require("path");
 const querystring=require("querystring");
 const PORT=process.env.PORT||80;
+const bodyParser=require('body-parser');
+  app.use(bodyParser.urlencoded({ extended: true})); // for parsing application/x-www-form-urlencoded
+const fs=require("fs");
 
 //Our static files:
 app.use("/", express.static(path.join(__dirname, "furniture")));
@@ -22,6 +25,39 @@ app.get(/^\/.*$/, function(req, res, next) {
   else {
     next();
   }
+});
+
+//------
+
+function takeForm(type, body, cb){
+  var timestamp=new Date(Date.now()).toISOString().replace(/[\:\.T]/g, "-").replace(/Z$/, "");
+  var txt="---\r\n";
+  for(var key in body) if(key!="message") txt+=key+": "+body[key]+"\r\n";
+  txt+="---\r\n\r\n";
+  if(body.message) txt+=body.message;
+  fs.writeFile(`./formdump/${timestamp}-${type}.md`, txt, "utf8", function(){
+    cb();
+  });
+}
+
+//Formulář "Konzultace":
+app.get("/konzultace/", function(req, res){
+  res.render("konzultace.ejs", {shape: "start"});
+});
+app.post("/konzultace/", function(req, res){
+  takeForm("konzultace", req.body, function(){
+    res.render("konzultace.ejs", {shape: "finish"});
+  });
+});
+
+//Formulář "Přidat do mapy":
+app.get("/pridat/", function(req, res){
+  res.render("pridat.ejs", {shape: "start"});
+});
+app.post("/pridat/", function(req, res){
+  takeForm("mapa", req.body, function(){
+    res.render("pridat.ejs", {shape: "finish"});
+  });
 });
 
 //------

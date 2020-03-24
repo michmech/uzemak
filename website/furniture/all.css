@@ -103,6 +103,10 @@ div.maepchen.homePage {
 div.maepchen.hotspotPage {
   height: 300px;
 }
+div.maepchen.formPage {
+  height: 280px;
+  margin-bottom: 20px;
+}
 a.maximizer {
   display: block;
   position: absolute; top: 0px; right: 0px;
@@ -119,6 +123,16 @@ a.maximizer:hover {
 }
 a.minimizer {
   display: none;
+}
+div.target {
+  display: block;
+  position: absolute; top: 100px; left: 50%; margin-left: -40px;
+  z-index: 10000;
+  background-image: url(/target.svg);
+  background-size: contain;
+  box-sizing: border-box;
+  width: 80px; height: 80px;
+  border-radius: 40px;
 }
 
 div.mapContainer.maximized {
@@ -171,6 +185,7 @@ div.footer div.inside div.clear {
 div.footer div.slogan {
   margin: 0px 0px 0.5em 0px;
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 div.footer div.line {
   margin: 0px 0px 0.5em 0px;
@@ -281,7 +296,16 @@ div.breadcrumbs span.divider {
 
 div.narrative {
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
+  padding-top: 35px;
+}
+div.narrative.topbracket {
+  border-top: 5px solid #eeeeee;
+  border-radius: 20px;
+  padding-left: 35px;
+  margin-left: -35px;
+  padding-right: 35px;
+  margin-right: -35px;
 }
 
 div.bubble {
@@ -302,4 +326,85 @@ div.bubble div.title a:hover {
 div.bubble div.blurb {}
 div.bubble div.title a {
   white-space: nowrap;
+}
+
+div.formfield {
+  line-height: 1.75em;
+  margin: 40px 0px;
+}
+div.formfield span.obligo {
+  float: right;
+  color: #cccccc;
+}
+div.formfield div.title {
+  margin-bottom: 10px;
+}
+div.formfield div.title span.numero {
+  background-color: #dddddd;
+  padding: 3px 15px;
+  border-radius: 2px;
+  margin-right: 0.25em;
+  font-weight: bold;
+}
+div.formfield input.textbox {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+div.formfield input.textbox.readonly {
+  background-color: #eeeeee;
+}
+div.formfield textarea.textbox {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  padding: 10px 15px;
+  resize: vertical;
+}
+
+div.formsubmit {
+  line-height: 1.75em;
+  margin: 40px 0px;
+  text-align: right;
+}
+div.formsubmit div.ticky {
+  float: left;
+  text-align: left;
+}
+div.formsubmit div.ticky label {
+  cursor: pointer;
+}
+div.formsubmit input.submit {
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+div.underform {
+  line-height: 1.75em;
+  margin: 20px 0px;
+}
+
+div.formsuccess {
+  margin: 30px 0px;
+  padding: 70px 0px;
+  text-align: center;
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+div.formsuccess div.icon {
+  font-size: 50px;
+}
+div.formsuccess div.message {
+  margin-top: 10px;
+  font-size: 1.25em;
 }

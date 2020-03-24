@@ -10,16 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta property="og:image" content="http://www.uzemniplanbrno.cz/sharingpreview.png" />
     <meta name="twitter:image" content="http://www.uzemniplanbrno.cz/sharingpreview.png" />
-    <title>Územní plán pro Brno</title>
-    <meta property="og:title" content="Územní plán pro Brno" />
+    <title>Přidat bod na mapu</title>
+    <meta property="og:title" content="Přidat bod na mapu" />
     <meta property="og:site_name" content="Územní plán pro Brno" />
-    <meta name="twitter:title" content="Územní plán pro Brno" />
+    <meta name="twitter:title" content="Přidat bod na mapu" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta property="og:description" content="" />
     <meta name="twitter:description" content="" />
-    <meta property="og:url" content="http://www.uzemniplanbrno.cz/" />
-    <meta name="twitter:url" content="http://www.uzemniplanbrno.cz/" />
+    <meta property="og:url" content="http://www.uzemniplanbrno.cz/pridat/" />
+    <meta name="twitter:url" content="http://www.uzemniplanbrno.cz/pridat/" />
 
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -35,11 +35,9 @@
     <link type="text/css" rel="stylesheet" href="/all.css" />
     <link type="text/css" rel="stylesheet" href="/all1200.css" media="(max-width: 1200px)"/>
     <link type="text/css" rel="stylesheet" href="/all800.css" media="(max-width: 800px)"/>
+    <link type="text/css" rel="stylesheet" href="/narrative.css" />
 
     <!--my scripts-->
-    <script type="text/javascript">
-      const hotspots=<%-JSON.stringify(hotspots)%>;
-    </script>
     <script type="text/javascript" src="/all.js"></script>
 
   </head>
@@ -63,66 +61,85 @@
     <div class="envelope">
       <div class="inside">
 
-        <div class="mapContainer">
-          <div class="maepchen homePage" id="map"></div>
-          <script type="text/javascript">$(startMapHomepage);</script>
-          <a class="maximizer" title="Zvětšit mapu" href="javascript:void(null)" onclick="maximizeMap()"><i class="fas fa-expand-arrows-alt"></i></a>
-          <a class="minimizer" title="Zmenšit mapu" href="javascript:void(null)" onclick="minimizeMap()"><i class="fas fa-compress"></i></a>
+        <div class="breadcrumbs">
+          <a class="step" href="/"><i class="fas fa-home"></i></a>
+          <span class="divider"><i class="fas fa-chevron-right"></i></span>
+          <span class="step">Přidat bod na mapu</span>
         </div>
 
         <div class="singlecolumn">
-          <div class="signposts">
-            <a class="signpost" href="/jak-cist-uzemni-plan/">
-              <span class="icon"><i class="fas fa-book-reader"></i></span>
-              <span class="overtitle">NÁVOD</span>
-              <span class="title">Jak číst územní plán</span>
-            </a>
-            <a class="signpost" href="/jak-podat-namitku-k-uzemnimu-planu/">
-              <span class="icon"><i class="fas fa-comment-alt"></i></span>
-              <span class="overtitle">NÁVOD</span>
-              <span class="title">Jak podat námitku k&nbsp;územnímu plánu</span>
-            </a>
-            <a class="signpost" href="/historie-a-budoucnost-uzemniho-planu/">
-              <span class="icon"><i class="fas fa-info"></i></span>
-              <span class="overtitle">POZADÍ</span>
-              <span class="title">Historie a budoucnost územního plánu</span>
-            </a>
-            <a class="signpost" href="/konzultace/">
-              <span class="icon"><i class="fas fa-phone"></i></span>
-              <span class="overtitle">KONZULTACE</span>
-              <span class="title">Zeptejte se odborníků na územní plán</span>
-            </a>
-            <a class="signpost prominent" href="/pridat/">
-              <span class="icon"><i class="fas fa-plus"></i></span>
-              <span class="overtitle">MAPA</span>
-              <span class="title">Přidat bod na mapu</span>
-            </a>
-            <div class="clear"></div>
+
+          <div class="narrative topbracket">
+            <span class="titleIcon prominent"><i class="fas fa-plus"></i></span>
+            <p class="overtitle">MAPA</p>
+            <h1>Přidat bod na mapu</h1>
+            <p class="blurb">
+              Prohledali jste návrh územního plánu a naši jste něco, co vás znepokojuje nebo na co chcete upozornit?
+              Zabýváte se dopadem územního plánu na nějaké konkrétní místo a chcete, aby se o tom víc vědělo?
+              Nahlašte nám to a my to přidáme na naši mapu.
+            </p>
           </div>
-          <div class="paraheading">
-            Brno zveřejnilo <a target="_blank" href="https://upmb.brno.cz/pripravovany-uzemni-plan/navrh-2/">návrh územního plánu</a> a vy ho můžete připomínkovat.
+
+          <%if(shape=="start"){%>
+            <form method="post">
+
+              <div class="formfield">
+                <span class="obligo">povinné</span>
+                <div class="title"><span class="numero">1.</span> Vaše jméno a příjmení</div>
+                <input name="name" class="textbox" type="text" required/>
+              </div>
+
+              <div class="formfield">
+                <span class="obligo">povinné</span>
+                <div class="title"><span class="numero">2.</span> Vaše e-mailová adresa</div>
+                <input name="email" class="textbox" type="email" required/>
+              </div>
+
+              <div class="formfield">
+                <div class="title"><span class="numero">3.</span> Namiřte střed mapy na místo, kterého se to týká</div>
+                <div class="mapContainer">
+                  <div class="maepchen formPage" id="map"></div>
+                  <div class="target"></div>
+                </div>
+                <input id="latlon" name="latlon" class="textbox readonly" readonly/>
+                <script type="text/javascript">$(startMapFormpage);</script>
+              </div>
+
+              <div class="formfield">
+                <span class="obligo">povinné</span>
+                <div class="title"><span class="numero">4.</span> Popis problému</div>
+                <textarea name="message" class="textbox" required></textarea>
+              </div>
+
+              <div class="formsubmit">
+                <div class="ticky">
+                  <label><input type="checkbox" onchange="tick()" id="ticky"/> Souhlasím se zásadami</label>
+                  <a href="/ochrana-osobnich-udaju/" target="_blank">ochrany osobních údajů.</a>
+                </div>
+                <input class="submit" type="submit" id="submit" value="Odeslat" disabled/>
+              </div>
+
+            </form>
+          <%}%>
+          <%if(shape=="finish"){%>
+            <div class="formsuccess">
+              <div class="icon"><i class="fas fa-check"></i></div>
+              <div class="message">Odesláno, díky.</div>
+            </div>
+          <%}%>
+
+          <div class="underform">
+            <i class="fas fa-info-circle"></i>
+            <b>Co bude dál?</b> Po odeslání si váš návrh přečteme a posoudíme ho. Budeme-li potřebovat vic informací, spojíme se a s vámi.
+            Když budeme souhlasit, že je to důležité, přidáme to na mapu.
           </div>
-          <div class="para">
-            Město je místo, kde žije na malém prostoru hodně lidí. Každý z nich chce přitom něco jiného.
-            <b>Územní plán</b> tyto protichůdné zájmy koordinuje. Iniciuje nový rozvoj města a zároveň jej usměrňuje.
-            Podle tohoto územního plánu se bude příštích 15 let stavět Brno.
+          <div class="underform">
+            <i class="far fa-envelope"></i>
+            <b>Tip</b> Místo vyplňování formuláře nám můžete poslat e-mail na adresu: <a href="mailto:kontakt@uzemniplanbrno.cz">kontakt@uzemniplanbrno.cz</a>
           </div>
-          <div class="para">
-            Pojďte se podívat, jak bude vypadat. Kam se <b>rozroste</b> a kde <b>zhoustne</b>.
-            Kudy povede nová <b>silnice</b>, kde budou nové <b>parky</b>.
-            Jak daleko to budete mít s dětmi nebo s pejskem <b>do lesa</b>.
-            Zkontrolujte, jestli vám někdo nezruší <b>zahrádku</b> nebo nezastaví <b>vnitroblok</b>.
-            To vše se rozhoduje v územním plánu a právě nyní. Až za pět let vyjedou bagry, bude pozdě na stížnosti. Správný čas je teď.
-          </div>
-          <div class="para">
-            Nebojte se územního plánu, <a href="/jak-cist-uzemni-plan/">pomůžeme vám v něm číst</a>.
-            Kdyby se vám v něm něco nelíbilo, poradíme vám, <a href="/jak-podat-namitku-k-uzemnimu-planu/">jak podat připomínku</a>.
-            Pokud naše návody nebudou stačit, napište nám, <a href="/konzultace/">najdeme vhodného odborníka</a>
-            na urbanismus, dopravu, vodu ve městě, ovzduší či právo, který vám odpoví.
-          </div>
+
           <div class="clear"></div>
         </div>
-
         <div class="clear"></div>
       </div>
     </div>

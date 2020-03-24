@@ -1,6 +1,6 @@
 //temporarily disables hyperlinks that do not work yet
 function temporaryDisable(){
-  var hrefs=["odbornici-na-uzemni-plan", "pridat"];
+  var hrefs=[];
   $("a").each(function(){
     var $a=$(this);
     var href=$a.attr("href").replace(/^\//, "").replace(/\/$/, "");
@@ -37,15 +37,11 @@ function startMapHotspot(){
   map=L.map("map").setView(metadata.latlon, 16);
   tileLayer().addTo(map);
   var marker=L.marker(metadata.latlon, {icon: hotspotIcon, interactive: false}).addTo(map);
-  marker.on("click", function(e){
-    //window.location="/mapa/?"+nick;
-    alert("Tohle ještě nefunguje, sorry.");
-  });
 }
 
 //sets up the map on the homepage:
 function startMapHomepage(){
-  map=L.map("map").setView([49.1950833, 16.6081017], 12);
+  map=L.map("map").setView([49.19522267351485, 16.608066558837894], 12);
   tileLayer().addTo(map);
   var latlons=[];
   hotspots.map(spot => {
@@ -60,17 +56,37 @@ function startMapHomepage(){
   });
   map.fitBounds(L.latLngBounds(latlons));
 }
-
 function maximizeMap(){
+  $(window).scrollTop(0);
   $("body").addClass("unscrollable");
   $(".mapContainer").addClass("maximized");
   $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
   startMapHomepage();
 }
-
 function minimizeMap(){
   $("body").removeClass("unscrollable");
   $(".mapContainer").removeClass("maximized");
   $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
   startMapHomepage();
+}
+
+//sets up the map on the form page:
+function startMapFormpage(){
+  map=L.map("map").setView([49.19522267351485, 16.608066558837894], 14);
+  tileLayer().addTo(map);
+  map.on("move", function(e){
+    var ll=map.getCenter();
+    latlon=[ll.lat, ll.lng];
+    $("#latlon").val(JSON.stringify(latlon).replace(",", ", "));
+  });
+  map.fire("move");
+}
+
+//When the user checks or uncheckes the ticky box next to the submit the button on a form:
+function tick(){
+  if($("#ticky").prop("checked")){
+    $("#submit").prop("disabled", false);
+  } else {
+    $("#submit").prop("disabled", true);
+  }
 }
