@@ -12,8 +12,8 @@ body.unscrollable {
   overflow: hidden;
 }
 a {color: #336699; text-decoration: none;}
-.blurb a, .para a, .overfooter a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
-.blurb a:hover, .para a:hover, .overfooter a:hover {color: #6699cc;}
+.blurb a, .para a, .paraheading a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
+.blurb a:hover, .para a:hover, .paraheading a:hover {color: #6699cc;}
 
 div.header {
   background-color: #ffffff;
@@ -148,24 +148,6 @@ a.minimizer:hover {
   color: #faf2a1;
 }
 
-div.overfooter {
-  color: #333333;
-  background-color: #ffffff;
-  padding: 10px;
-  font-size: 0.95rem;
-}
-div.overfooter div.inside {
-  max-width: 1200px;
-  margin: 0px auto;
-  padding: 20px 0px;
-  line-height: 1.5em;
-  padding-right: 300px;
-  box-sizing: border-box;
-}
-div.overfooter div.inside i {
-  margin-right: 0.5em;
-}
-
 div.footer {
   color: #ffffff;
   padding: 10px;
@@ -202,6 +184,7 @@ div.footer a {
 }
 div.footer div.socials {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 div.footer div.socials a {
   margin-right: 1.5em;

@@ -9,6 +9,7 @@ const nicks=[
   "jak-cist-uzemni-plan",
   "jak-podat-namitku-k-uzemnimu-planu",
   "odbornici-na-uzemni-plan",
+  "ochrana-osobnich-udaju"
 ];
 
 function render(req, res, nick){
@@ -16,7 +17,7 @@ function render(req, res, nick){
     var md=new markdown();
     md.use(attrs);
     var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
-    var html=md.render(txt);
+    var html=md.render(txt).replace(/<a href="http/g, "<a target=\"_blank\" href=\"http");
     res.render("narrative.ejs", {html: html, metadata: metadata, nick: nick});
   });
 }

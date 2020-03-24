@@ -70,20 +70,13 @@
         <div class="singlecolumn">
 
           <div class="narrative">
-            <span class="titleIcon"><i class="fas <%=metadata.titleIcon%>"></i></span>
+            <%if(metadata.titleIcon){%><span class="titleIcon"><i class="fas <%=metadata.titleIcon%>"></i></span><%}%>
             <%-html%>
           </div>
 
           <div class="clear"></div>
         </div>
         <div class="clear"></div>
-      </div>
-    </div>
-    <div class="overfooter">
-      <div class="inside">
-        <i class="fas fa-info-circle"></i>
-        Toto jsou <strong>neoficiální</strong> informační stránky o brněnském územním plánu.
-        <strong>Oficiální</strong> informace k územnímu plánu najdete <a href="https://upmb.brno.cz/pripravovany-uzemni-plan/navrh-2/" target="_blank">na stránkách magistrátu města Brna&nbsp;»</a>
       </div>
     </div>
     <div class="footer">
@@ -100,6 +93,8 @@
             <a target="_blank" title="Sdílet na Twitteru" href="https://twitter.com/share?url=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-twitter"></i></a>
             <a class="email" href="mailto:kontakt@uzemniplanbrno.cz">kontakt@uzemniplanbrno.cz</a>
           </div>
+          <div class="line"><a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a></div>
+          <div class="line"><a target="_blank" href="https://github.com/michmech/uzemak/">Zdrojový kód&nbsp; <i class="fab fa-github"></i></a></div>
         </div>
         <div class="right">
           <div class="slogan">Nebojte se územního plánu.</div>

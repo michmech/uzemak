@@ -71,3 +71,10 @@
   color: #333333;
   font-style: italic;
 }
+
+strong.numero {
+  background-color: #dddddd;
+  padding: 3px 15px;
+  border-radius: 2px;
+  margin-right: 0.25em;
+}
