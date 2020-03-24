@@ -5,6 +5,7 @@ const fm=require("markdown-it-front-matter");
 const yaml=require("js-yaml");
 
 const nicks=[
+  "historie-a-budoucnost-uzemniho-planu",
   "jak-cist-uzemni-plan",
   "jak-podat-namitku-k-uzemnimu-planu",
   "odbornici-na-uzemni-plan",
@@ -16,7 +17,6 @@ function render(req, res, nick){
     md.use(attrs);
     var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
     var html=md.render(txt);
-    console.log(metadata);
     res.render("narrative.ejs", {html: html, metadata: metadata, nick: nick});
   });
 }

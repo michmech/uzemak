@@ -1,4 +1,7 @@
-div.header a.maplogo {
+div.header span.socials {
+  display: none;
+}
+div.header a.obrlogo {
   display: none;
 }
 

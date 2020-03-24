@@ -37,20 +37,13 @@
     <link type="text/css" rel="stylesheet" href="/all800.css" media="(max-width: 800px)"/>
 
     <!--my scripts-->
+    <script type="text/javascript">
+      const hotspots=<%-JSON.stringify(hotspots)%>;
+    </script>
     <script type="text/javascript" src="/all.js"></script>
 
   </head>
   <body>
-
-    <div class="stripe">
-      <div class="inside">
-        <a target="_blank" href="https://otevrene-brno.cz">Otevřené Brno</a>
-        <span class="socials">
-          <a target="_blank" title="Sdílet na Facebooku" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-facebook"></i></a>
-          <a target="_blank" title="Sdílet na Twitteru" href="https://twitter.com/share?url=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-twitter"></i></a>
-        </span>
-      </div>
-    </div>
 
     <div class="header">
       <div class="inside">
@@ -58,39 +51,32 @@
           <span class="line line1"><span>ÚZEMNÍ PLÁN</span></span>
           <span class="line line2"><span>PRO BRNO</span></span>
         </a>
-        <a class="maplogo" href="/mapa/">
-          <span class="lines">
-            <span class="line line1"><span>Mapa</span></span>
-            <span class="line line2"><span>žhavých bodů</span></span>
-          </span>
-          <span class="outline"></span>
-          <span class="icon"><i class="fas fa-fire"></i></span>
-        </a>
+        <span class="socials">
+          <a target="_blank" title="kontakt@uzemniplanbrno.cz" href="mailto:kontakt@uzemniplanbrno.cz"><i class="far fa-envelope"></i></a>
+          <a target="_blank" title="Sdílet na Facebooku" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-facebook"></i></a>
+          <a target="_blank" title="Sdílet na Twitteru" href="https://twitter.com/share?url=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-twitter"></i></a>
+        </span>
+        <a class="obrlogo" href="https://otevrene-brno.cz" target="_blank" title="Otevřené Brno"></a>
       </div>
     </div>
 
     <div class="envelope">
       <div class="inside">
-        <div class="twothirds">
 
-          <div class="para">
-            Je rok 2020 a město Brno připravuje nový <b>uzemní plán</b>.
-            Územní plán je důležitý.
-            Definuje totiž, jestli vám u domu vyroste <b>betonové parkoviště</b>,
-            jak daleko to budete mít s dětmi nebo s pejskem <b> do parku</b>,
-            jestli vám zruší <b>zahrádku</b> nebo zastaví <b>vnitroblok</b>.
-            To vše se rozhoduje v územním plánu.
-          </div>
-          <div class="para">
-            Proto spolek <b>Otevřené Brno</b> vyrobil tyhle stránky.
-            Nabízíme tady návody, <a href="/jak-cist-uzemni-plan/">jak územní plán číst</a>
-            a <a href="/jak-podat-namitku-k-uzemnimu-planu/">jak podávat námitky</a>.
-            Na naší <a href="/mapa/">mapě žhavých bodů</a> shromažďujeme údaje o místech, kterých se územní plán výrazně dotkne.
-            Nabízíme <a href="/odbornici-na-uzemni-plan/">konzultace s odborníky</a> na právo, stavby, dopravu či životní prostředí.
-            Ptejte se nás – <b>o&nbsp;územním plánu víme vše</b>.
-          </div>
+        <div class="mapContainer">
+          <div class="maepchen homePage" id="map"></div>
+          <script type="text/javascript">$(startMapHomepage);</script>
+          <a class="maximizer" title="Zvětšit mapu" href="javascript:void(null)" onclick="maximizeMap()"><i class="fas fa-expand-arrows-alt"></i></a>
+          <a class="minimizer" title="Zmenšit mapu" href="javascript:void(null)" onclick="minimizeMap()"><i class="fas fa-compress"></i></a>
+        </div>
 
+        <div class="singlecolumn">
           <div class="signposts">
+            <a class="signpost" href="/historie-a-budoucnost-uzemniho-planu/">
+              <span class="icon"><i class="fas fa-info"></i></span>
+              <span class="overtitle">ÚVOD</span>
+              <span class="title">Historie a budoucnost územního plánu</span>
+            </a>
             <a class="signpost" href="/jak-cist-uzemni-plan/">
               <span class="icon"><i class="fas fa-book-reader"></i></span>
               <span class="overtitle">NÁVOD</span>
@@ -106,36 +92,32 @@
               <span class="overtitle">KONZULTACE</span>
               <span class="title">Zeptejte se odborníků na územní plán</span>
             </a>
+            <a class="signpost prominent" href="/pridat/">
+              <span class="icon"><i class="fas fa-plus"></i></span>
+              <span class="overtitle">MAPA</span>
+              <span class="title">Přidat bod na mapu</span>
+            </a>
             <div class="clear"></div>
           </div>
-
+          <div class="para">
+            Je rok 2020 a město Brno připravuje nový <b>uzemní plán</b>.
+            Územní plán je důležitý.
+            Definuje totiž, jestli vám u domu vyroste <b>betonové parkoviště</b>,
+            jak daleko to budete mít s dětmi nebo se psem <b> do parku</b>,
+            jestli vám zruší <b>zahrádku</b> nebo zastaví <b>vnitroblok</b>.
+          </div>
+          <div class="para">
+            Proto spolek <b>Otevřené Brno</b> vyrobil tyhle stránky.
+            Na mapě shromažďujeme údaje o místech, kterých se územní plán výrazně dotkne.
+            V našem <a href="/historie-a-budoucnost-uzemniho-planu/">úvodu</a> vám vysvětlíme, o co v územním plánu jde.
+            Napsali jsme dva užitečné návody <a href="/jak-cist-uzemni-plan/">jak územní plán číst</a> a
+            <a href="/jak-podat-namitku-k-uzemnimu-planu/">jak podávat námitky</a>.
+            Nabízíme <a href="/odbornici-na-uzemni-plan/">konzultace s odborníky</a> na právo, stavby, dopravu či životní prostředí.
+            Ptejte se nás – <b>o&nbsp;územním plánu víme vše</b>.
+          </div>
           <div class="clear"></div>
         </div>
-        <div class="onethird">
 
-          <a class="maplogo" href="/mapa/">
-            <span class="line"><span>Mapa žhavých bodů</span></span>
-            <span class="outline"></span>
-            <span class="icon"><i class="fas fa-fire"></i></span>
-          </a>
-
-          <div class="overfeature">
-            <span class="intertitle">Žhavý bod pro tento moment</span>
-            <a class="reload" href="javascript:void(null)" onclick="loadFeature()"><i class="fas fa-sync-alt"></i> jiný</a>
-          </div>
-
-          <div class="feature" id="feature">
-            <div class="maepchen" id="map"></div>
-            <div class="title"><a class="red" href=""></a></div>
-            <div class="blurb">
-              <span class="inside"></span>
-              <a href="">Víc&nbsp;informací&nbsp;»</a>
-            </div>
-            <div class="wait"></div>
-          </div>
-          <script type="text/javascript">$(loadFeature);</script>
-
-        </div>
         <div class="clear"></div>
       </div>
     </div>
@@ -150,10 +132,11 @@
       <div class="inside">
         <div class="left">
           <div class="line sitetitle"><a href="/">Územní plán pro Brno</a></div>
+          <div class="line"><a href="/historie-a-budoucnost-uzemniho-planu/">Historie a budoucnost územního plánu</a></div>
           <div class="line"><a href="/jak-cist-uzemni-plan/">Jak číst územní plán</a></div>
           <div class="line"><a href="/jak-podat-namitku-k-uzemnimu-planu/">Jak podat námitku k&nbsp;územnímu plánu</a></div>
           <div class="line"><a href="/odbornici-na-uzemni-plan/">Zeptejte se odborníků na územní plán</a></div>
-          <div class="line"><a href="/mapa/">Mapa žhavých bodů</a></div>
+          <div class="line"><a href="/pridat/">Přidat bod na mapu</a></div>
           <div class="socials">
             <a target="_blank" title="Sdílet na Facebooku" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-facebook"></i></a>
             <a target="_blank" title="Sdílet na Twitteru" href="https://twitter.com/share?url=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-twitter"></i></a>

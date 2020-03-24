@@ -25,17 +25,49 @@
   margin-bottom: 1em;
   font-weight: normal;
 }
+.narrative p.blurb {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+}
 
 
 .narrative h2 {
   line-height: 1.75em;
-  margin-top: 2em;
+  margin-top: 1.75em;
   margin-bottom: 1em;
+  font-weight: normal;
 }
-
-
+.narrative h3 {
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
 .narrative p {
   line-height: 1.75em;
   margin-top: 0px;
   margin-bottom: 1em;
+}
+.narrative ul, .narrative ol  {
+  line-height: 1.75em;
+  margin-bottom: 1em;
+}
+.narrative li {
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
+.narrative hr {
+  height: 0px;
+  border: 0px;
+  background-color: transparent;
+  border-top: 2px dotted #eeeeee;
+  margin: 1.5em 0px;
+}
+
+.narrative blockquote {
+  margin-left: 0px;
+  border-left: 20px solid #eeeeee;
+  padding-left: 20px;
+  color: #333333;
+  font-style: italic;
 }

@@ -24,50 +24,32 @@ app.get(/^\/.*$/, function(req, res, next) {
   }
 });
 
-//Home page:
-app.get("/", function(req, res){
-  res.render("home.ejs", {});
-});
-
 //------
 
 const appHotspot=require("./app-hotspot.js");
+const appNarrative=require("./app-narrative.js");
 
-//Hotspot page:
-app.get("/mapa/:nick/", function(req, res){
+//Home page:
+app.get("/", function(req, res){
+  res.render("home.ejs", {hotspots: appHotspot.hotspots});
+});
+
+//Hotspot page or narrative page:
+app.get("/:nick/", function(req, res){
   var nick=req.params.nick;
   if(appHotspot.nicks.indexOf(nick)>-1){
     appHotspot.render(req, res, nick);
+  } else if(appNarrative.nicks.indexOf(nick)>-1){
+      appNarrative.render(req, res, nick);
   } else {
     do404(req, res);
   }
 });
-
-//Random hotspot for the home page:
-app.get("/feature.json", function(req, res){
-  appHotspot.random(req, res, req.query.not);
-});
-
-//------
-
-const appNarrative=require("./app-narrative.js");
-
-//Narrative page:
-app.get("/:nick/", function(req, res){
-  var nick=req.params.nick;
-  if(appNarrative.nicks.indexOf(nick)>-1){
-    appNarrative.render(req, res, nick);
-  } else {
-    do404(req, res);
-  }
-});
-
 
 //------
 
 //404:
 function do404(req, res){
-  console.log("404", req.url);
   res.status(404).render("404.ejs", {});
 }
 app.use(do404);

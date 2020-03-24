@@ -5,13 +5,22 @@ const fm=require("markdown-it-front-matter");
 const yaml=require("js-yaml");
 
 nicks=[
-  // "pr-parkoviste-purkynova",
-  // "hotel-na-vinohradech",
+  // ""
+];
+hotspots=[
+  //{nick: "", latlon: [0, 0], title: "", blurb: ""}
 ];
 fs.readdirSync("./hotspots/").map(filename => {
+  var md=new markdown();
+  md.use(attrs);
+  var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
   if(filename.endsWith(".md")){
     var nick=filename.replace(/\.md$/, "");
     nicks.push(nick);
+    var txt=fs.readFileSync(`./hotspots/${nick}.md`, "utf8");
+    md.render(txt);
+    metadata.nick=nick;
+    hotspots.push(metadata);
   }
 });
 
@@ -48,6 +57,7 @@ function getRandomInt(max) {
 
 module.exports={
   nicks: nicks,
+  hotspots: hotspots,
   render: render,
   random: random,
 };

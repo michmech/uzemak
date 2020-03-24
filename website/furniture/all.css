@@ -1,44 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap&subset=latin-ext');
-body {font-family: 'Montserrat', sans-serif; background-color: #333333; margin: 0; padding: 0; line-height: 1.3em; font-size: 1em; color: #000000;}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333333;
+  margin: 0; padding: 0;
+  line-height: 1.3em;
+  font-size: 1em;
+  color: #000000;
+  border-top: 5px solid #333333;
+}
+body.unscrollable {
+  overflow: hidden;
+}
 a {color: #336699; text-decoration: none;}
 .blurb a, .para a, .overfooter a {border-bottom: 1px dotted #336699; padding-bottom: 2px;}
 .blurb a:hover, .para a:hover, .overfooter a:hover {color: #6699cc;}
 
-div.stripe {
-  background-color: #dddddd;
-  padding: 10px 0px;
-  font-size: 0.95rem;
-}
-div.stripe div.inside {
-  max-width: 1200px;
-  margin: 0px auto;
-}
-div.stripe a {
-  color: #000000;
-  margin-right: 1.5em;
-}
-div.stripe span.socials {
-  float: right;
-}
-div.stripe span.socials a {
-  margin-right: 0px;
-  margin-left: 1.5em;
-  font-size: 1.25em;
-}
-div.stripe a:hover {
-  color: #336699;
-}
-
 div.header {
   background-color: #ffffff;
-  padding: 50px 0px 20px 0px;
+  padding: 40px 0px 20px 0px;
 }
 div.header div.inside {
   max-width: 1200px;
   margin: 0px auto;
   position: relative;
 }
-
 div.header a.logo {
   display: inline-block;
   margin-left: -5px;
@@ -54,86 +39,42 @@ div.header a.logo span.line > span {
   background-color: #333333;
   color: #fff9c2;
   border-radius: 2px;
-  padding: 10px 60px 10px 20px;
+  padding: 12px 60px 12px 20px;
 }
 div.header a.logo:hover span.line > span {
   color: #faf2a1;
 }
-
-div.header a.maplogo {
+div.header span.socials {
+  float: right;
+}
+div.header span.socials a {
+  margin-right: 0px;
+  margin-left: 15px;
+  font-size: 1.5em;
+}
+div.header span.socials a:hover {
+  color: #6699cc;
+}
+div.header a.obrlogo {
   display: block;
-  position: absolute; top: -10px; right: -30px;
-  height: 100px;
+  position: absolute; top: 45px; right: 0px;
+  width: 113px; height: 50px;
   box-sizing: border-box;
-  padding-top: 100px;
-}
-div.header a.maplogo span.lines {
-  position: absolute; bottom: 5px; right: 75px;
-}
-div.header a.maplogo span.line {
-  text-align: right;
-  display: block;
-  font-size: 1em;
-  margin: 0px 0px 3px 0px;
-  white-space: nowrap;
-}
-div.header a.maplogo span.line > span {
-  display: inline-block;
-  font-weight: bold;
-  background-color: #444444;
-  color: #fff9c2;
-  border-radius: 2px;
-  padding: 5px 20px 5px 20px;
-}
-div.header a.maplogo span.line.line1 > span {
-  padding-right: 100px;
-}
-div.header a.maplogo span.line.line2 > span {
-  padding-right: 70px;
-}
-div.header a.maplogo span.outline {
-  background-image: url(/obrys.svg); background-position: center; background-size: contain; background-repeat: no-repeat;
-  position: absolute; top: 0px; right: 0px; bottom: 0px; width: 200px;
-}
-div.header a.maplogo span.icon {
-  display: block;
-  position: absolute; top: 35px; right: 85px;
-  color: #e427a7;
-  font-size: 25px;
-}
-div.header a.maplogo span.icon i {
-}
-div.header a.maplogo:hover span.line > span {
-  color: #faf2a1;
-}
-div.header a.maplogo:hover span.outline {
-  top: -1px; right: -1px; bottom: -1px; width: 202px;
+  background-image: url(/obr.jpg); background-position: center; background-repeat: no-repeat;
 }
 
 div.envelope {
   background-color: #ffffff;
-  padding: 40px 0px 100px 0px;
+  padding: 20px 0px 100px 0px;
 }
 div.envelope > div.inside {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 0px 0px 0px;
 }
-div.envelope > div.inside > div.twothirds {
-  float: left;
-  width: 60%;
-  box-sizing: border-box;
-  padding-right: 0px;
-}
-div.envelope > div.inside > div.onethird {
-  float: left;
-  width: 40%;
-  box-sizing: border-box;
-  padding-left: 30px;
-}
 div.envelope > div.inside > div.singlecolumn {
   max-width: 800px;
-  margin: 100px auto 0px auto;
+  margin: 60px auto 0px auto;
 }
 div.envelope > div.inside div.clear {
   clear: both;
@@ -143,54 +84,9 @@ div.onethird a.maplogo {
   display: none;
 }
 
-div.overfeature {
-  color: #333333;
-}
-div.overfeature span.intertitle {
-  font-size: 1.1em;
-  color: #000000;
-}
-div.overfeature a.reload {
-  font-weight: normal;
-  text-decoration: none;
-  margin-left: 10px;
-  float: right;
-}
-div.overfeature a.reload:hover {
-  color: #6699cc;
-}
-div.overfeature a.reload i {
-  font-size: 0.8em;
-  margin-right: 0px;
-}
-div.feature {
-  margin-top: 20px;
+div.mapContainer {
   position: relative;
 }
-div.feature div.title {
-  margin-top: 25px;
-  font-size: 1.5em;
-  line-height: 1.5em;
-}
-div.feature div.title a {
-  color: #000000;
-}
-div.feature div.title a:hover {
-  color: #336699;
-}
-div.feature div.blurb {
-  margin-top: 10px;
-  line-height: 1.75em;
-}
-div.feature div.wait {
-  position: absolute;
-  top: 0px; left: 0px; right: 0px; bottom: 0px;
-  background-color: #ffffff;
-  background-image: url("/wait.gif");
-  background-position: center top+100px;
-  background-repeat: no-repeat;
-}
-
 div.maepchen {
   width: 100%;
   height: 200px;
@@ -201,9 +97,55 @@ div.maepchen {
   border: 2px solid #336699;
   box-sizing: border-box;
 }
+div.maepchen.homePage {
+  height: 300px;
+}
 div.maepchen.hotspotPage {
   height: 300px;
-  margin-bottom: -50px;
+}
+a.maximizer {
+  display: block;
+  position: absolute; top: 0px; right: 0px;
+  font-size: 20px;
+  z-index: 10000;
+  background-color: #336699;
+  color: #fff9c2;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 0px 4px 0px 4px;
+}
+a.maximizer:hover {
+  color: #faf2a1;
+}
+a.minimizer {
+  display: none;
+}
+
+div.mapContainer.maximized {
+  position: absolute;
+  top: 0px; left: 0px; right: 0px; bottom: 0px;
+}
+div.mapContainer.maximized div.maepchen {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+}
+div.mapContainer.maximized a.maximizer {
+  display: none;
+}
+div.mapContainer.maximized a.minimizer {
+  display: block;
+  position: absolute; top: 0px; right: 0px;
+  font-size: 20px;
+  z-index: 10000;
+  background-color: #336699;
+  color: #fff9c2;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 0px 0px 0px 4px;
+}
+a.minimizer:hover {
+  color: #faf2a1;
 }
 
 div.overfooter {
@@ -273,29 +215,23 @@ div.footer a:hover {
   color: #99ccff;
 }
 
-div.para {
-  font-size: 1em;
-  line-height: 1.75em;
-  padding-right: 30px;
-  margin-bottom: 20px;
-}
-
 div.signposts {
-  margin-top: 60px;
-  margin-left: -5px;
-  margin-right: 15px;
+  margin-top: 0px;
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-bottom: 60px;
 }
 div.signposts > div.clear {
   clear: left;
 }
 a.signpost {
   box-sizing: border-box;
-  padding: 0px 5px;
+  padding: 0px 10px;
   display: block;
   float: left;
   text-align: center;
   color: #000000;
-  width: 33%;
+  width: 20%;
 }
 a.signpost span.icon {
   display: inline-block;
@@ -304,6 +240,9 @@ a.signpost span.icon {
   width: 60px; height: 60px;
   border-radius: 60px;
   font-size: 30px;
+}
+a.signpost.prominent span.icon {
+  background-color: #e427a7;
 }
 a.signpost span.icon i {
   margin-top: 15px;
@@ -316,7 +255,7 @@ a.signpost span.overtitle {
 a.signpost span.title {
   margin-top: 5px;
   display: block;
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 1.35em;
 }
 a.signpost:hover {
@@ -324,6 +263,13 @@ a.signpost:hover {
 }
 a.signpost:hover span.icon {
   color: #faf2a1;
+}
+
+div.para {
+  font-size: 1em;
+  line-height: 1.75em;
+  padding-right: 30px;
+  margin-bottom: 20px;
 }
 
 div.breadcrumbs {
@@ -347,4 +293,24 @@ div.breadcrumbs span.divider {
 div.narrative {
   margin-bottom: 40px;
   margin-top: 50px;
+}
+
+div.bubble {
+  font-size: 1rem;
+  color: #333333;
+}
+div.bubble div.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25em;
+  color: #000000;
+}
+div.bubble div.title a {
+  color: inherit;
+}
+div.bubble div.title a:hover {
+  color: #336699;
+}
+div.bubble div.blurb {}
+div.bubble div.title a {
+  white-space: nowrap;
 }
