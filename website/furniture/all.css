@@ -265,6 +265,12 @@ a.signpost:hover span.icon {
   color: #faf2a1;
 }
 
+div.paraheading {
+  font-size: 1.25em;
+  line-height: 1.75em;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
 div.para {
   font-size: 1em;
   line-height: 1.75em;

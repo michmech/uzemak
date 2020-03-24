@@ -77,6 +77,10 @@ březen 2020
 
 - [Vzor námitky zástupce veřejnosti](/vzor2.pdf)
 
+## Odkaz
+
+- Připomínku či námitku k územnímu plánu lze vytvořit i pomocí [tohoto formuláře](https://gis.brno.cz/ost/projednani-upd/public/), který připravil magistrát města Brna.
+
 ## Podklady
 
 JARMIČ, L., ZÁHUMENSKÁ, V.: Zástupce veřejnosti aneb efektivní účast v územním plánování. Ekologický právní servis, červen 2010

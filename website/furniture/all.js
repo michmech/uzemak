@@ -1,6 +1,6 @@
 //temporarily disables hyperlinks that do not work yet
 function temporaryDisable(){
-  var hrefs=["jak-cist-uzemni-plan", "odbornici-na-uzemni-plan", "pridat"];
+  var hrefs=["odbornici-na-uzemni-plan", "pridat"];
   $("a").each(function(){
     var $a=$(this);
     var href=$a.attr("href").replace(/^\//, "").replace(/\/$/, "");
