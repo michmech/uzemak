@@ -1,0 +1,9 @@
+---
+latlon: [49.181955856348736, 16.586608886718754]
+title: "Vysoká zástavba v Kamenné čtvrti"
+blurb: ""
+---
+
+**Příspěvek od Radim Horáka:**
+
+> Zástavba 6-16 m vysoká = velká výška, bude dominovat i při pohledu z Kamenné čtvrti. Technika pohybující se na okraji skalní stěny = ohrožení Kamenné čtvrti. Ideálně rozšířit zelený pás až k nové "LDN" a vysadit například městský volně otevřený sad. (Minimálně ale redukce výšky zástavby aspoň na polovinu - ideálně 3-7 m = B/r1
