@@ -3,6 +3,7 @@ const markdown=require("markdown-it");
 const attrs=require("markdown-it-attrs");
 const fm=require("markdown-it-front-matter");
 const yaml=require("js-yaml");
+const krovak=require("./krovak.js");
 
 nicks=[
   // ""
@@ -30,34 +31,13 @@ function render(req, res, nick){
     md.use(attrs);
     var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
     var html=md.render(txt).replace(/<a href="http/g, "<a target=\"_blank\" href=\"http");;
+    metadata.krovak=krovak.convert(metadata.latlon[0], metadata.latlon[1]);
     res.render("hotspot.ejs", {html: html, metadata: metadata, nick: nick});
   });
-}
-
-function random(req, res, notNick){
-  var nick=null;
-  while(!nick || nick==notNick) nick=nicks[getRandomInt(nicks.length)];
-  fs.readFile(`./hotspots/${nick}.md`, "utf8", function(err, txt){
-    var md=new markdown();
-    md.use(attrs);
-    var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
-    md.render(txt);
-    var feature={
-      nick: nick,
-      latlon: metadata.latlon,
-      title: metadata.title,
-      blurb: metadata.blurb
-    };
-    res.json(feature);
-  });
-}
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
 }
 
 module.exports={
   nicks: nicks,
   hotspots: hotspots,
   render: render,
-  random: random,
 };

@@ -120,6 +120,15 @@
             Pokud naše návody nebudou stačit, napište nám, <a href="/konzultace/">najdeme vhodného odborníka</a>
             na urbanismus, dopravu, vodu ve městě, ovzduší či právo, který vám odpoví.
           </div>
+
+          <div class="hotspots">
+            <div class="heading">Body na mapě</div>
+            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
+                <%if(i>0){%>&nbsp;|&nbsp;<%}%>
+                <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+            <%}%>
+          </div>
+
           <div class="clear"></div>
         </div>
 

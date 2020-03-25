@@ -308,6 +308,21 @@ div.narrative.topbracket {
   margin-right: -35px;
 }
 
+div.gislink {
+  margin-top: 15px;
+  margin-left: 2px;
+}
+div.gislink a {
+  border-bottom: 0px;
+}
+div.gislink a:hover {
+  color: #6699cc;
+}
+div.gislink a i {
+  margin-right: 0.25em;
+  font-size: 1.25em;
+}
+
 div.bubble {
   font-size: 1rem;
   color: #333333;
@@ -407,4 +422,24 @@ div.formsuccess div.icon {
 div.formsuccess div.message {
   margin-top: 10px;
   font-size: 1.25em;
+}
+
+div.hotspots {
+  margin-top: 80px;
+  line-height: 1.75em;
+}
+div.hotspots div.heading {
+  background-image: url(hotspot.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  min-height: 40px;
+}
+div.hotspots a.hotspot {}
+div.hotspots a.hotspot:hover {
+  color: #6699cc;
 }
