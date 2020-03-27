@@ -35,7 +35,7 @@ Vraťme se k *Návrhu* (dejte si ho na 100%).
 
 ---
 
-**6.**{.numero} Plnou barvou jsou vyznačeny **plochy stabilizované** čili ty, které jsou *hotové* a nemají se už měnit. **Plochy přestavby** poznáte podle bílé mřížky (v komunikacích šedé). To jsou ty, které se podle *Návrhu* mají měnit a *Návrh *říká, jak se mají měnit.
+**6.**{.numero} Plnou barvou jsou vyznačeny **plochy stabilizované** čili ty, které jsou *hotové* a nemají se už měnit. **Plochy přestavby** poznáte podle bílé mřížky (v komunikacích šedé). To jsou ty, které se podle *Návrhu* mají měnit a *Návrh* říká, jak se mají měnit.
 
 **Rozvojové lokality**, ve kterých se má stavět, jsou navíc *oplocené* černými *trojúhelníčky*. Jsou to větší přestavbová území s podrobnější popisem (viz bod 11). Některé z nich mohou obsahovat i fragmenty ploch stabilizovaných, pro které vymezení jejich určení neplatí.
 
@@ -71,7 +71,7 @@ Poslední, malé písmeno slouží k označení případných **speciálních fu
 
 ---
 
-**11.**{.numero} Když na kteroukoli *plochu *nebo *rozvojovou lokalitu* kliknete, vyskočí vpravo její *Identifikace*, kde je toto všechno rozepsáno slovy.
+**11.**{.numero} Když na kteroukoli *plochu* nebo *rozvojovou lokalitu* kliknete, vyskočí vpravo její *Identifikace*, kde je toto všechno rozepsáno slovy.
 
 Každá rozvojová lokalita má navíc svoji *kartu*, kde se o ní dozvíte ještě mnohem víc. **Karty rozvojových lokalit** najdete [zde](https://www.brno.cz/fileadmin/user_upload/sprava_mesta/magistrat_mesta_brna/OUPR/Pripravovany_uzemni_plan/NAVRH/VP_2020/TEXTOVA_CAST/Zavazna_cast/1_Zavazna_textova_cast_UPmB_priloha_c._1_karty_lokalit.pdf). Jsou řazeny podle zmíněných částí města.
 
