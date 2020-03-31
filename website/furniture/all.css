@@ -294,6 +294,46 @@ div.breadcrumbs span.divider {
   color: #999999;
 }
 
+div.announce {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  color: #333333;
+  position: relative;
+  padding-left: 2.75em;
+}
+div.announce span.icon {
+  font-size: 1.5em;
+  margin-right: 0.4em;
+  position: absolute;
+  left: 0px; top: 10px;
+}
+div.announce span.heading {
+  display: block;
+}
+div.announce span.heading span.intro {
+  font-weight: bold;
+  font-size: 0.95em;
+}
+div.announce span.heading span.overtitle {
+  font-size: 0.95em;
+}
+div.announce span.heading span.divider {
+  color: #999999;
+  margin: 0px 0.25em;
+}
+div.announce span.content {
+  display: block;
+  font-size: 1.1em;
+}
+div.announce span.content a {
+  font-weight: bold;
+}
+div.announce span.content a:hover {
+  color: #6699cc;
+}
+
+
 div.narrative {
   margin-bottom: 40px;
   margin-top: 20px;

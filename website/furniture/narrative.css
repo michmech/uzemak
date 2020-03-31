@@ -75,9 +75,27 @@
   font-style: italic;
 }
 
-strong.numero {
+.narrative strong.numero {
   background-color: #dddddd;
   padding: 3px 15px;
   border-radius: 2px;
   margin-right: 0.25em;
+}
+
+.narrative p.bigimage {
+  background-color: #eeeeee;
+  border-radius: 2px;
+  margin: 3em 0px;
+  border: 2px solid #999999;
+}
+.narrative p.bigimage img {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 0px auto;
+  border-radius: 2px;
+}
+.narrative p.imagecaption {
+  color: #666666;
+  margin: -2em 0px 3em 0px;
 }

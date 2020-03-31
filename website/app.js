@@ -9,6 +9,7 @@ const fs=require("fs");
 
 //Our static files:
 app.use("/", express.static(path.join(__dirname, "furniture")));
+app.use("/", express.static(path.join(__dirname, "narratives")));
 
 //Our views:
 app.set("views", path.join(__dirname, "views"));

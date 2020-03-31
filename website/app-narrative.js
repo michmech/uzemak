@@ -8,7 +8,8 @@ const nicks=[
   "historie-a-budoucnost-uzemniho-planu",
   "jak-cist-uzemni-plan",
   "jak-podat-namitku-k-uzemnimu-planu",
-  "ochrana-osobnich-udaju"
+  "ochrana-osobnich-udaju",
+  "rozhovor-jiri-zlatuska",
 ];
 
 function render(req, res, nick){
