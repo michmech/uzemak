@@ -19,12 +19,15 @@ div.footer div.inside div.right {
 }
 
 a.signpost {
-  /* box-sizing: border-box;
-  padding: 0px 5px;
-  display: block; */
   float: none;
-  /* text-align: center;
-  color: #000000; */
   width: auto;
   margin-bottom: 60px;
+}
+
+div.announce span.heading {
+  display: inline;
+}
+div.announce span.content {
+  display: inline;
+  margin-left: 0.25em;
 }

@@ -33,9 +33,13 @@ app.get(/^\/.*$/, function(req, res, next) {
 function takeForm(type, body, cb){
   var timestamp=new Date(Date.now()).toISOString().replace(/[\:\.T]/g, "-").replace(/Z$/, "");
   var txt="---\r\n";
-  for(var key in body) if(key!="message") txt+=key+": "+body[key]+"\r\n";
+  if(body.name) txt+="name: "+body.name+"\r\n";
+  if(body.email) txt+="email: "+body.email+"\r\n";
+  if(body.latlon) txt+="latlon: "+body.latlon+"\r\n";
   txt+="---\r\n\r\n";
-  if(body.message) txt+=body.message;
+  if(body.plocha) txt+="## O jakou plochu v návrhu se jedná?\r\n\r\n"+body.plocha+"\r\n\r\n";
+  if(body.zmena) txt+="## Jakou změnu navrhujete?\r\n\r\n"+body.zmena+"\r\n\r\n";
+  if(body.oduvodneni) txt+="## Odůvodnění?\r\n\r\n"+body.oduvodneni+"\r\n\r\n";
   fs.writeFile(`./formdump/${timestamp}-${type}.md`, txt, "utf8", function(){
     cb();
   });
