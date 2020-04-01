@@ -37,6 +37,7 @@ function takeForm(type, body, cb){
   if(body.email) txt+="email: "+body.email+"\r\n";
   if(body.latlon) txt+="latlon: "+body.latlon+"\r\n";
   txt+="---\r\n\r\n";
+  if(body.message) txt+=body.message+"\r\n\r\n";
   if(body.plocha) txt+="## O jakou plochu v návrhu se jedná?\r\n\r\n"+body.plocha+"\r\n\r\n";
   if(body.zmena) txt+="## Jakou změnu navrhujete?\r\n\r\n"+body.zmena+"\r\n\r\n";
   if(body.oduvodneni) txt+="## Odůvodnění?\r\n\r\n"+body.oduvodneni+"\r\n\r\n";

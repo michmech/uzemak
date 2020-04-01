@@ -73,11 +73,13 @@
             <span class="titleIcon"><i class="fas fa-phone"></i></span>
             <p class="overtitle">KONZULTACE</p>
             <h1>Zeptejte se odborníků na územní plán</h1>
-            <p class="blurb">
-              Pokud vám nestačí naše návody <a href="/jak-cist-uzemni-plan/">Jak číst územní plán</a>
-              a <a href="/jak-podat-namitku-k-uzemnimu-planu/">Jak podat námitku k územnímu plánu</a>,
-              napište nám: najdeme vhodného odborníka na urbanismus, dopravu, vodu ve městě, ovzduší či právo, který vám odpoví.
-            </p>
+            <%if(shape=="start"){%>
+              <p class="blurb">
+                Pokud vám nestačí naše návody <a href="/jak-cist-uzemni-plan/">Jak číst územní plán</a>
+                a <a href="/jak-podat-namitku-k-uzemnimu-planu/">Jak podat námitku k územnímu plánu</a>,
+                napište nám: najdeme vhodného odborníka na urbanismus, dopravu, vodu ve městě, ovzduší či právo, který vám odpoví.
+              </p>
+            <%}%>
           </div>
 
           <%if(shape=="start"){%>
