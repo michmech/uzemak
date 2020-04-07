@@ -10,6 +10,7 @@ const nicks=[
   "jak-podat-namitku-k-uzemnimu-planu",
   "ochrana-osobnich-udaju",
   "rozhovor-jiri-zlatuska",
+  "rozhovor-filip-chvatal",
 ];
 
 function render(req, res, nick){

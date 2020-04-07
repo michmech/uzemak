@@ -493,3 +493,15 @@ div.hotspots a.hotspot {}
 div.hotspots a.hotspot:hover {
   color: #6699cc;
 }
+
+div.announces {
+  margin-top: 50px;
+  line-height: 1.75em;
+}
+div.announces div.heading {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  min-height: 40px;
+}
