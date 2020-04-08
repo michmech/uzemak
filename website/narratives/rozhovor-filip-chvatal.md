@@ -1,18 +1,15 @@
 ---
-title: "Filip Chvátal: ..."
-image: "/chvatal.jpg"
+title: "Rozhovor s Filipem Chvátalem, radním pro územní plánování a rozvoj"
 ---
 
-ROZHOVOR {.overtitle}
+# Rozhovor s Filipem Chvátalem, radním pro územní plánování a rozvoj
 
-# Filip Chvátal: ...
-
-7\. dubna 2020
+8\. dubna 2020
 
 
-![Filip Chvátal](/chvatal.jpg) {.bigimage}
+Brněnský magistrát v souvislosti s hygienickou situací posunul termín veřejného projednání návrhu územního plánu, a tedy i sběru připomínek veřejnosti. Lidé nyní mají možnost podat připomínku až do 24. června. O návrhu územního plánu jsme si povídali s RNDr. Filipem Chvátalem, PhD., radním města Brna, který má v kompetenci územní plánování a rozvoj.
 
-Filip Chvátal je... {.imagecaption}
+*Rozhovor vedl Jakub Kořínek*
 
 ## Filipe, jsem rád, že jste ty termíny posunuli blíže realitě. Nerozumím ale, proč jste to neudělali hned od začátku. Proč jste před týdnem vydali vyhlášku, že lidi můžou podávat námitky k návrhu územního plánu do 13. května? Víš, že se k tomu potřebují setkávat, bavit se o tom a vybrat nejméně 200 podpisů. Zkoušeli jste lidi, jestli to skousnou?
 
@@ -57,5 +54,3 @@ Předpokládám, skutečně, že se podaří zrealizovat neformální setkání 
 Nyní jsme ve fázi veřejného projednání. Cílem tedy je, aby se obyvatelé vyjádřili formou připomínky, případně zmocnili zástupce veřejnosti pro podání námitky, která má větší váhu v tom, že rozhodnutí o způsobu jejího vypořádání schvaluje zastupitelstvo. Jinak všechny připomínky i námitky budou vypořádány odborem územního plánování ve spolupráci s Kanceláří architekta města a samosprávy. Pokud narážíš na to, že je vytvoření námitek nadlidský úkol, tak bych chtěl říci, že si každý zástupce veřejnosti může již nyní konzultovat formulace pomocí sociálních sítí tak, jak to běžně činí, a to v nadprůměrně dlouhé 3 měsíční lhůtě. Stále navíc předpokládáme, že zhruba 30 dní před ukončením projednání bude už snad pohyb osob bez větších omezení. Zároveň podání připomínky a námitky je možné nadstandardně pouze emailem za splnění všech náležitostí identifikace podatele.  Chceme zapracovat připomínky i námitky, pokud budou relevantní a nebudou jim bránit další objektivní okolnosti. Obecně i u změn územního plánu jsme se snažili vycházet připomínkám veřejnosti vstříc. Obecně budeme samozřejmě postupovat podle toho, jak nám to nařizuje zákon.
 
 ---
-
-*Rozhovor vedl Jakub Kořínek*
