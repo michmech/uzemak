@@ -159,9 +159,22 @@
 
           <div class="hotspots">
             <div class="heading">Body na mapě</div>
+            <%var hasPrecedent=false;%>
             <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
-                <%if(i>0){%>&nbsp;|&nbsp;<%}%>
-                <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                <%if(hotspot.latlon){%>
+                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
+                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                  <%hasPrecedent=true;%>
+                <%}%>
+            <%}%>
+            <div class="heading noicon">Poznámky mimo mapu</div>
+            <%hasPrecedent=false;%>
+            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
+                <%if(!hotspot.latlon){%>
+                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
+                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                  <%hasPrecedent=true;%>
+                <%}%>
             <%}%>
           </div>
 

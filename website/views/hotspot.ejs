@@ -71,17 +71,21 @@
           <span class="step"><%=metadata.title%></span>
         </div>
 
-        <div class="maepchen hotspotPage" id="map"></div>
-        <div class="gislink">
-          <a target="_blank" href="https://gis.brno.cz/mapa/upmb-navrh/?c=-<%=metadata.krovak[0].toFixed(2)%>%3A-<%=metadata.krovak[1].toFixed(2)%>&z=6&lb=zm-brno&ly=v21&lbo=1&lyo=">
-            <i class="fas fa-external-link-alt"></i>
-            Toto místo v návrhu územního plánu&nbsp;»
-          </a>
-        </div>
-        <script type="text/javascript">startMapHotspot();</script>
+        <%if(metadata.latlon){%>
+          <div class="maepchen hotspotPage" id="map"></div>
+          <div class="gislink">
+            <a target="_blank" href="https://gis.brno.cz/mapa/upmb-navrh/?c=-<%=metadata.krovak[0].toFixed(2)%>%3A-<%=metadata.krovak[1].toFixed(2)%>&z=6&lb=zm-brno&ly=v21&lbo=1&lyo=">
+              <i class="fas fa-external-link-alt"></i>
+              Toto místo v návrhu územního plánu&nbsp;»
+            </a>
+          </div>
+          <script type="text/javascript">startMapHotspot();</script>
+        <%}%>
 
         <div class="singlecolumn">
-          <div class="narrative">
+          <div class="narrative <%if(!metadata.latlon){%>topbracket<%}%>">
+            <%if(!metadata.latlon){%><span class="titleIcon hotspot"><i class="fas fa-fire"></i></span><%}%>
+            <p class="overtitle">POZNÁMKA K NÁVRHU ÚZEMNÍHO PLÁNU</p>
             <h1><%=metadata.title%></h1>
             <p class="blurb"><%=metadata.blurb%></p>
             <hr/>

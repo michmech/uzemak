@@ -1,0 +1,19 @@
+---
+latlon: [49.191997453313135, 16.5864372253418]
+title: "Zachování zelené plochy na Žlutém kopci"
+blurb: ""
+---
+
+Autor poznámky: OS Masarykova Čtvrť
+
+## O jakou plochu v návrhu se jedná?
+
+> Zeleň Z
+
+## Jakou změnu navrhujete?
+
+> Navrhujeme, aby se dosud zamýšlený rozsah plochy zeleně ještě více a razantně rozšířil.
+
+## Odůvodnění?
+
+> Chceme, aby co největší část krásného Žlutého kopce zůstala zelená a také otevřená veřejnosti, což sousední plochy (návrhem určeny pro bydlení) vůbec negarantují a naopak hrozí, že Žlutý kopec přijde o hodně zeleně a definitivně se uzavře.

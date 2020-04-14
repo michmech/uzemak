@@ -4,7 +4,7 @@ title: "Hotel na Vinohradech"
 blurb: "Projekt, který hýbe vinohradskou politikou: rekreačně sportovní areál Petra Sýkory."
 ---
 
-**Stanovisko Městské části Brno-Vinohrady**
+Stanovisko Městské části Brno-Vinohrady
 
 > Městské části Brno - Vinohrady  byl investorem představen projekt „GO UP Brno východ – rekreačně sportovní areál Petra Sýkory“, jehož koncept je ke zhlédnutí na webu [Atelieru Habina](https://www.habina.cz/go-up-vychod) základní popis projektuje uveden na webu [investora](https://www.properity.cz/projekty/pripravovany-projekt-c-6).
 >

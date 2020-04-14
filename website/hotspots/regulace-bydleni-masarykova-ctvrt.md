@@ -1,0 +1,21 @@
+---
+latlon: [49.19704553104799, 16.58274650573731]
+title: "Zpřísnění regulace bydlení v Masarykově čtvrti"
+blurb: ""
+---
+
+Autor poznámky: OS Masarykova Čtvrť
+
+## O jakou plochu v návrhu se jedná?
+
+> Bydlení
+
+## Jakou změnu navrhujete?
+
+> Zkonkrétnit (zpřísnit) přípustná využití, a to ve všech plochách.
+
+## Odůvodnění?
+
+> V každé ploše (včetně bydlení) jsou dle Návrhu i tzv. "přípustné využití", což je využití pro účel odlišný, než je hlavní využití, který však není s hlavním využitím v rozporu; umožňuje činnosti, stavby a zařízení, které budou s hlavním způsobem využití související, doplňující nebo podmiňující.
+>
+> Návrh však už přesně neříká, co je "související, doplňující nebo podmiňující" - tato obecnost je velmi riskantní. Ačkoli máte dům v ploše bydlení, teoreticky vám někdo může hned vedle postavit samoobluhu nebo parkoviště, protože je to pro bydlení "související" využití.

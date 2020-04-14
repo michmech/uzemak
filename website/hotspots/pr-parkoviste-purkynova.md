@@ -4,7 +4,7 @@ title: "P+R parkoviště na Purkyňově"
 blurb: "Stavba zatím největšího parkovacího domu pro 441 aut plus venkovního parkoviště pro 89 aut — to vše na ploše, kde je dnes zeleň."
 ---
 
-**Informace od [Občanského sdružení Královo Pole, z.s.](https://obcanekrpole.cz/) a jeho iniciativy [Parkovací dům na ulici Purkyňova](https://parkpurkynova.cz/)**
+Informace od [Občanského sdružení Královo Pole, z.s.](https://obcanekrpole.cz/) a jeho iniciativy [Parkovací dům na ulici Purkyňova](https://parkpurkynova.cz/)
 
 > Magistrát města Brna plánuje stavbu více odstavných parkovišť v okrajových čtvrtích. U nás je bohužel v plánu stavba zatím největšího parkovacího domu pro kombinované účely pro 441 aut a současně i venkovního parkoviště pro 89 aut bezprostředně vedle parkovacího domu a to přímo na ploše, kde je dnes zeleň.
 >

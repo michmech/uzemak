@@ -4,6 +4,6 @@ title: "Cyklostezka Novolíšeňská - Kotlanova"
 blurb: ""
 ---
 
-**Příspěvek od Vladimíra Zavřela:**
+Autor poznámky:  Vladimír Zavřel
 
 > ÚMČ Brno-Líšeň plánuje stavbu cyklostezky podél tramvaje č. 8 od zastávky Novolíšeňská k zastávce Kotlanova. Vzhledem k výškovému profilu se jedná o ideální trasu do sídliště Líšeň. Bylo by zapotřebí tuto cyklostezku zahrnout do ÚPmB.

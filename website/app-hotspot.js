@@ -31,7 +31,7 @@ function render(req, res, nick){
     md.use(attrs);
     var metadata={}; md.use(fm, fm => metadata=yaml.safeLoad(fm));
     var html=md.render(txt).replace(/<a href="http/g, "<a target=\"_blank\" href=\"http");;
-    metadata.krovak=krovak.convert(metadata.latlon[0], metadata.latlon[1]);
+    if(metadata.latlon) metadata.krovak=krovak.convert(metadata.latlon[0], metadata.latlon[1]);
     res.render("hotspot.ejs", {html: html, metadata: metadata, nick: nick});
   });
 }

@@ -4,6 +4,6 @@ title: "Prodloužení tramvajové tratě v Bosonohách"
 blurb: ""
 ---
 
-**Spolek Bosonoh**
+Autor poznámky: Spolek Bosonoh
 
 > Výstavbu podmínit prodloužením tramvajové tratě.

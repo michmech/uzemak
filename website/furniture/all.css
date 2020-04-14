@@ -379,9 +379,6 @@ div.bubble div.title a:hover {
   color: #336699;
 }
 div.bubble div.blurb {}
-div.bubble div.title a {
-  white-space: nowrap;
-}
 
 div.formfield {
   line-height: 1.75em;
@@ -393,6 +390,16 @@ div.formfield span.obligo {
 }
 div.formfield div.title {
   margin-bottom: 10px;
+}
+div.formfield div.subtitle {
+  margin-bottom: 10px;
+  color: #666666;
+}
+div.formfield div.subtitle label {
+  cursor: pointer;
+}
+div.formfield div.subtitle label:hover {
+  color: #336699;
 }
 div.formfield div.title span.numero {
   background-color: #dddddd;
@@ -488,6 +495,11 @@ div.hotspots div.heading {
   padding-top: 5px;
   box-sizing: border-box;
   min-height: 40px;
+}
+div.hotspots div.heading.noicon {
+  background-image: none;
+  padding-left: 0px;
+  margin-top: 20px;
 }
 div.hotspots a.hotspot {}
 div.hotspots a.hotspot:hover {

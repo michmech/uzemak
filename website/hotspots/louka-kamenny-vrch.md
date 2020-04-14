@@ -4,6 +4,6 @@ title: "Louka na Kamenném vrchu"
 blurb: ""
 ---
 
-**OS Louka**
+Autor poznámky: OS Louka
 
 > Nesouhlasíme s umístěním komerčního sportovního areálu na louce, která slouží k individálním sportovním aktivitám a rekreaci. Chybí dostupnost veřejnou dopravou.

@@ -4,7 +4,7 @@ title: "Zachování zelené plochy při ulici Horova"
 blurb: ""
 ---
 
-Příspěvek od Kateřiny Odabasi
+Autor poznámky: Kateřina Odabasi
 
 ## O jakou plochu v návrhu se jedná?
 

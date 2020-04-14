@@ -4,7 +4,7 @@ title: "Silnice Lesná–Obřany"
 blurb: ""
 ---
 
-**Příspěvek od Jana Budňáka**
+Autor poznámky: Jan Budňák
 
 ## O jakou plochu v návrhu se jedná?
 
@@ -17,4 +17,3 @@ blurb: ""
 ## Odůvodnění?
 
 > Protestuji proti zřízení silnice spojující Obřany (Fryčajova) a Lesnou (Barvy). Silnice není systémové řešení potřebného obchvatu Maloměřic a Obřan, ale mohla by se stát "trvalým provizoriem". Do horní části Obřan přivede katastrofální množství aut. Silnice zničí přístup z obřanského sídliště na jedinou pěší cestu ke školce a ke Svitavě (za "hasičkou"), znehodnotí dětské hřiště na Fryčajově a uzavře úzké obřanské údolí mezi dvě přetížené výpadovky korunované křižovatkou nad "hasičkou".
-

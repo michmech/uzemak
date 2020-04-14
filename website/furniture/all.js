@@ -45,14 +45,16 @@ function startMapHomepage(){
   tileLayer().addTo(map);
   var latlons=[];
   hotspots.map(spot => {
-    latlons.push(spot.latlon);
-    var marker=L.marker(spot.latlon, {icon: hotspotIcon}).addTo(map);
-    var html='<div class="bubble">';
-    html+='<div class="title"><a href="/'+spot.nick+'/">'+spot.title+'</a></div>';
-    html+='<div class="blurb">'+spot.blurb+' <a href="/'+spot.nick+'/">Víc informací&nbsp;»</a></div>';
-    html+='</div>';
-    var popup=L.popup({maxWidth: 450}).setContent(html);
-    marker.bindPopup(popup);
+    if(spot.latlon){
+      latlons.push(spot.latlon);
+      var marker=L.marker(spot.latlon, {icon: hotspotIcon}).addTo(map);
+      var html='<div class="bubble">';
+      html+='<div class="title"><a href="/'+spot.nick+'/">'+spot.title+'</a></div>';
+      html+='<div class="blurb">'+spot.blurb+' <a href="/'+spot.nick+'/">Víc informací&nbsp;»</a></div>';
+      html+='</div>';
+      var popup=L.popup({maxWidth: 450}).setContent(html);
+      marker.bindPopup(popup);
+    }
   });
   map.fitBounds(L.latLngBounds(latlons));
 }
@@ -80,6 +82,17 @@ function startMapFormpage(){
     $("#latlon").val(JSON.stringify(latlon).replace(",", ", "));
   });
   map.fire("move");
+
+  $("#nogeo").on("change", function(e){
+    if($("#nogeo").prop("checked")){
+      $(".mapContainer").hide();
+      $("#latlon").hide();
+    } else {
+      $(".mapContainer").show();
+      $("#latlon").show();
+    }
+  });
+  $("#nogeo").trigger("change");
 }
 
 //When the user checks or uncheckes the ticky box next to the submit the button on a form:

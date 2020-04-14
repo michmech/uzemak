@@ -35,7 +35,7 @@ function takeForm(type, body, cb){
   var txt="---\r\n";
   if(body.name) txt+="name: "+body.name+"\r\n";
   if(body.email) txt+="email: "+body.email+"\r\n";
-  if(body.latlon) txt+="latlon: "+body.latlon+"\r\n";
+  if(body.latlon && !body.nogeo) txt+="latlon: "+body.latlon+"\r\n";
   txt+="---\r\n\r\n";
   if(body.message) txt+=body.message+"\r\n\r\n";
   if(body.plocha) txt+="## O jakou plochu v návrhu se jedná?\r\n\r\n"+body.plocha+"\r\n\r\n";
