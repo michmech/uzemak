@@ -45,11 +45,11 @@ Zástupce veřejnosti je možné zvolit kdykoliv. Připravovat se na sepsání v
 
 Nový územní plán ve městě Brně už je v poslední fázi celého procesu. V minulosti se veřejnost mohla vyjadřovat k návrhu zadání, pak podle starého stavebního zákona vznikl koncept územního plánu a nyní se nacházíme ve fázi návrhu územního plánu.
 
-Územní plán se doručuje tzv. **veřejnou vyhláškou**. Znamená to to, že bude zveřejněn **na úřední desce** města Brna (Nikdo nebude informován osobně, např. doručením poštou. Ani vlastníci pozemků.), a to jak na fyzické úřední desce (pro rozsah půjde zřejmě o oznámení s odkazem na stažení na internetu), tak na elektronické úřední desce. Po zveřejnění na úřední desce začíná běžet 15denní lhůta doručení. 
+Územní plán se doručuje tzv. **veřejnou vyhláškou**. Znamená to to, že bude zveřejněn **na úřední desce** města Brna (Nikdo nebude informován osobně, např. doručením poštou. Ani vlastníci pozemků.), a to jak na fyzické úřední desce (pro rozsah půjde zřejmě o oznámení s odkazem na stažení na internetu), tak na elektronické úřední desce. Po zveřejnění na úřední desce začíná běžet 15denní lhůta doručení.
 
 Nejdříve za 15 dní od doručení návrhu (tedy za 30 dní od zveřejnění na úřední desce) proběhne **veřejné projednání**. Od veřejného projednání je pak možné uplatnit své připomínky/námitky do 7 dnů. V nejkratším možném případě je tedy lhůta pro zpracování a podání námitek 37 dní od zveřejnění.
 
-DŮLEŽITÉ: Datum veřejného projednání je stanoveno na 6. května 2020, tedy datum ukončení sběru námitek/připomínek je v tuto chvíli **13. května 2020**. Vzhledem k aktuální hygienické situaci je však vysoká pravděpodobnost, že se toto datum bude měnit. Sledujte prosím naše stránky, kde budeme zveřejňovat aktuální informace.
+DŮLEŽITÉ: Datum veřejného projednání je stanoveno na 17. června 2020, tedy datum ukončení sběru námitek/připomínek je v tuto chvíli **24. června 2020**. Vzhledem k aktuální hygienické situaci je však vysoká pravděpodobnost, že se toto datum bude měnit. Sledujte prosím naše stránky, kde budeme zveřejňovat aktuální informace.
 
 
 ## Stručné shrnutí na závěr
