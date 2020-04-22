@@ -11,6 +11,7 @@ const nicks=[
   "ochrana-osobnich-udaju",
   "rozhovor-jiri-zlatuska",
   "rozhovor-filip-chvatal",
+  "debata-2020-04-23",
 ];
 
 function render(req, res, nick){
