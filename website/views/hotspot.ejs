@@ -85,7 +85,9 @@
         <div class="singlecolumn">
           <div class="narrative <%if(!metadata.latlon){%>topbracket<%}%>">
             <%if(!metadata.latlon){%><span class="titleIcon hotspot"><i class="fas fa-fire"></i></span><%}%>
-            <p class="overtitle">POZNÁMKA K NÁVRHU ÚZEMNÍHO PLÁNU</p>
+            <p class="overtitle">
+              <%if(metadata.plural){%>POZNÁMKY K NÁVRHU ÚZEMNÍHO PLÁNU<%}else{%>POZNÁMKA K NÁVRHU ÚZEMNÍHO PLÁNU<%}%>
+            </p>
             <h1><%=metadata.title%></h1>
             <p class="blurb"><%=metadata.blurb%></p>
             <hr/>
