@@ -7,6 +7,17 @@ const bodyParser=require('body-parser');
   app.use(bodyParser.urlencoded({ extended: true})); // for parsing application/x-www-form-urlencoded
 const fs=require("fs");
 
+//WWW redirect:
+function wwwRedirect(req, res, next){
+  if(/^[^\.]+\.[^\.]+$/.test(req.headers.host)){
+    var newHost="www."+req.headers.host;
+    return res.redirect(301, req.protocol+"://"+newHost+req.originalUrl);
+  }
+  next();
+};
+app.set("trust proxy", true);
+app.use(wwwRedirect);
+
 //Our static files:
 app.use("/", express.static(path.join(__dirname, "furniture")));
 app.use("/", express.static(path.join(__dirname, "narratives")));
