@@ -49,7 +49,7 @@ Nový územní plán ve městě Brně už je v poslední fázi celého procesu. 
 
 Nejdříve za 15 dní od doručení návrhu (tedy za 30 dní od zveřejnění na úřední desce) proběhne **veřejné projednání**. Od veřejného projednání je pak možné uplatnit své připomínky/námitky do 7 dnů. V nejkratším možném případě je tedy lhůta pro zpracování a podání námitek 37 dní od zveřejnění.
 
-DŮLEŽITÉ: Datum veřejného projednání je stanoveno na 17. června 2020, tedy datum ukončení sběru námitek/připomínek je v tuto chvíli **24. června 2020**. Vzhledem k aktuální hygienické situaci je však vysoká pravděpodobnost, že se toto datum bude měnit. Sledujte prosím naše stránky, kde budeme zveřejňovat aktuální informace.
+DŮLEŽITÉ: Veřejná projednání návrhu Územního plánu proběhnou v pondělí 22. a úterý 23. června 2020, vždy od 15.00 na brněnském Výstavišti. Své námitky a připomínky můžete podat do **30. června 2020**.
 
 
 ## Stručné shrnutí na závěr
