@@ -31,3 +31,7 @@ div.announce span.content {
   display: inline;
   margin-left: 0.25em;
 }
+
+div.hotspots {
+  text-align: left;
+}

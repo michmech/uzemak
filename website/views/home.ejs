@@ -63,11 +63,11 @@
     <div class="envelope">
       <div class="inside">
 
-        <div class="announce">
+        <!-- <div class="announce">
           <span class="icon"><i class="fas fa-bullhorn"></i></span>
           <span class="heading">
-            <!-- <span class="intro">DEBATY</span>
-            <span class="divider">|</span> -->
+            <span class="intro">DEBATY</span>
+            <span class="divider">|</span>
             22. a 23. června 2020
             <span class="divider">|</span>
             15:00
@@ -77,6 +77,12 @@
           <span class="content">
             <a href="/verejna-projednani-2020-06/">Veřejná projednání návrhu Územního plánu&nbsp;»</a>
           </span>
+        </div> -->
+
+        <div class="maptitle">
+          <span>
+            Připomínky Otevřeného Brna k Návrhu územního plánu
+          </span>
         </div>
 
         <div class="mapContainer">
@@ -84,6 +90,26 @@
           <script type="text/javascript">$(startMapHomepage);</script>
           <a class="maximizer" title="Zvětšit mapu" href="javascript:void(null)" onclick="maximizeMap()"><i class="fas fa-expand-arrows-alt"></i></a>
           <a class="minimizer" title="Zmenšit mapu" href="javascript:void(null)" onclick="minimizeMap()"><i class="fas fa-compress"></i></a>
+        </div>
+
+        <div class="hotspots">
+          <%var hasPrecedent=false;%>
+          <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
+              <%if(hotspot.latlon){%>
+                <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
+                <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                <%hasPrecedent=true;%>
+              <%}%>
+          <%}%>
+          <!-- <div class="heading noicon">Poznámky mimo mapu</div>
+          <%hasPrecedent=false;%>
+          <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
+              <%if(!hotspot.latlon){%>
+                <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
+                <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                <%hasPrecedent=true;%>
+              <%}%>
+          <%}%> -->
         </div>
 
         <div class="singlecolumn">
@@ -108,14 +134,15 @@
               <span class="overtitle">KONZULTACE</span>
               <span class="title">Zeptejte se odborníků na územní plán</span>
             </a>
-            <a class="signpost prominent" href="/pridat/">
+            <!-- <a class="signpost prominent" href="/pridat/">
               <span class="icon"><i class="fas fa-plus"></i></span>
               <span class="overtitle">MAPA</span>
               <span class="title">Přidat bod na mapu</span>
-            </a>
+            </a> -->
             <div class="clear"></div>
           </div>
-          <div class="paraheading">
+
+          <!-- <div class="paraheading">
             Brno zveřejnilo <a target="_blank" href="https://gis.brno.cz/mapa/upmb-navrh/?c=-595246.45%3A-1160576.5&z=4&lb=zm-brno&ly=v21&lbo=1&lyo=">návrh územního plánu</a> a vy ho můžete připomínkovat.
           </div>
           <div class="para">
@@ -135,7 +162,7 @@
             Kdyby se vám v něm něco nelíbilo, poradíme vám, <a href="/jak-podat-namitku-k-uzemnimu-planu/">jak podat připomínku</a>.
             Pokud naše návody nebudou stačit, napište nám, <a href="/konzultace/">najdeme vhodného odborníka</a>
             na urbanismus, dopravu, vodu ve městě, ovzduší či právo, který vám odpoví.
-          </div>
+          </div> -->
 
           <div class="announces">
             <div class="heading">Aktuality</div>
@@ -185,27 +212,6 @@
             </div>
           </div>
 
-          <div class="hotspots">
-            <div class="heading">Body na mapě</div>
-            <%var hasPrecedent=false;%>
-            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
-                <%if(hotspot.latlon){%>
-                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
-                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
-                  <%hasPrecedent=true;%>
-                <%}%>
-            <%}%>
-            <div class="heading noicon">Poznámky mimo mapu</div>
-            <%hasPrecedent=false;%>
-            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
-                <%if(!hotspot.latlon){%>
-                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
-                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
-                  <%hasPrecedent=true;%>
-                <%}%>
-            <%}%>
-          </div>
-
           <div class="clear"></div>
         </div>
 
@@ -220,7 +226,7 @@
           <div class="line"><a href="/jak-podat-namitku-k-uzemnimu-planu/">Jak podat námitku k&nbsp;územnímu plánu</a></div>
           <div class="line"><a href="/historie-a-budoucnost-uzemniho-planu/">Historie a budoucnost územního plánu</a></div>
           <div class="line"><a href="/konzultace/">Zeptejte se odborníků na územní plán</a></div>
-          <div class="line"><a href="/pridat/">Přidat bod na mapu</a></div>
+          <!-- <div class="line"><a href="/pridat/">Přidat bod na mapu</a></div> -->
           <div class="socials">
             <a target="_blank" title="Sdílet na Facebooku" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-facebook"></i></a>
             <a target="_blank" title="Sdílet na Twitteru" href="https://twitter.com/share?url=http%3A//www.uzemniplanbrno.cz/"><i class="fab fa-twitter"></i></a>

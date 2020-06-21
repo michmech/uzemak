@@ -68,14 +68,14 @@ app.post("/konzultace/", function(req, res){
 });
 
 //Formulář "Přidat do mapy":
-app.get("/pridat/", function(req, res){
-  res.render("pridat.ejs", {shape: "start"});
-});
-app.post("/pridat/", function(req, res){
-  takeForm("mapa", req.body, function(){
-    res.render("pridat.ejs", {shape: "finish"});
-  });
-});
+// app.get("/pridat/", function(req, res){
+//   res.render("pridat.ejs", {shape: "start"});
+// });
+// app.post("/pridat/", function(req, res){
+//   takeForm("mapa", req.body, function(){
+//     res.render("pridat.ejs", {shape: "finish"});
+//   });
+// });
 
 //------
 
