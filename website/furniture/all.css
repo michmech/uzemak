@@ -339,6 +339,7 @@ div.maptitle {
   z-index: 1;
   position: relative;
   margin-bottom: -2px;
+  font-size: 1.1em;
 }
 div.maptitle span {
   background-color: #eeeeee;
@@ -350,7 +351,6 @@ div.maptitle span {
   font-weight: bold;
   color: #666666;
 }
-
 
 div.narrative {
   margin-bottom: 40px;
@@ -520,9 +520,29 @@ div.hotspots div.heading.noicon {
   padding-left: 0px;
   margin-top: 20px;
 }
-div.hotspots a.hotspot {}
+div.hotspots a.hotspot {
+}
 div.hotspots a.hotspot:hover {
   color: #6699cc;
+}
+div.hotspots div.chapter {
+  margin-bottom: 20px;
+}
+div.hotspots div.chapter span.icon {
+  font-size: 1.5em;
+  margin-right: 0.4em;
+}
+div.hotspots span.intertitle {
+  font-weight: bold;
+  color: #666666;
+  background-color: #eeeeee;
+  padding: 3px 6px;
+  border-radius: 2px;
+  margin-right: 0.4em;
+  margin-left: -3px;
+}
+div.hotspots a.hotspot.fat {
+  font-weight: bold;
 }
 
 div.announces {

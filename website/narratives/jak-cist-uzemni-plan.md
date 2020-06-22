@@ -77,7 +77,7 @@ Každá rozvojová lokalita má navíc svoji *kartu*, kde se o ní dozvíte ješ
 
 ---
 
-Jakmile zvládnete tento základ, najdete toho v *Návrhu územního plánu* mnohem víc. Nezapomeňte, že má i [textovou část](https://www.brno.cz/fileadmin/user_upload/sprava_mesta/magistrat_mesta_brna/OUPR/Pripravovany_uzemni_plan/NAVRH/VP_2020/TEXTOVA_CAST/Zavazna_cast/1_Zavazna_textova_cast_UPmB.pdf). Prozkoumejte místa v Brně, která znáte, [a dejte nám vědět, co jste našli](/pridat/). Pokud jste našli něco, co vás znepokojuje, můžete [podat *připomínku*](https://gis.brno.cz/ost/projednani-upd/public/): použijte [náš návod, jak ji podat](/jak-podat-namitku-k-uzemnimu-planu/).
+Jakmile zvládnete tento základ, najdete toho v *Návrhu územního plánu* mnohem víc. Nezapomeňte, že má i [textovou část](https://www.brno.cz/fileadmin/user_upload/sprava_mesta/magistrat_mesta_brna/OUPR/Pripravovany_uzemni_plan/NAVRH/VP_2020/TEXTOVA_CAST/Zavazna_cast/1_Zavazna_textova_cast_UPmB.pdf). Prozkoumejte místa v Brně, která znáte, a dejte nám vědět, co jste našli. Pokud jste našli něco, co vás znepokojuje, můžete [podat *připomínku*](https://gis.brno.cz/ost/projednani-upd/public/): použijte [náš návod, jak ji podat](/jak-podat-namitku-k-uzemnimu-planu/).
 
 ---
 

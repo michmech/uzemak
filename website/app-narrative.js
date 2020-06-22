@@ -13,6 +13,7 @@ const nicks=[
   "rozhovor-filip-chvatal",
   "debata-2020-04-23",
   "verejna-projednani-2020-06",
+  "systemove-pripominky",
 ];
 
 function render(req, res, nick){

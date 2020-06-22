@@ -93,14 +93,21 @@
         </div>
 
         <div class="hotspots">
-          <%var hasPrecedent=false;%>
-          <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
-              <%if(hotspot.latlon){%>
-                <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
-                <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
-                <%hasPrecedent=true;%>
-              <%}%>
-          <%}%>
+          <div class="chapter">
+            <span class="icon"><i class="fas fa-bullhorn"></i></span>
+            <a class="hotspot fat" href="/systemove-pripominky/">Systémové připomínky Otevřeného Brna k Návrhu Územního plánu&nbsp;»</a>
+          </div>
+          <div class="chapter">
+            <span class="intertitle">Místní připomínky</span>
+            <%var hasPrecedent=false;%>
+            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
+                <%if(hotspot.latlon){%>
+                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
+                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                  <%hasPrecedent=true;%>
+                <%}%>
+            <%}%>
+          </div>
           <!-- <div class="heading noicon">Poznámky mimo mapu</div>
           <%hasPrecedent=false;%>
           <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
