@@ -514,6 +514,10 @@ div.hotspots div.heading {
   padding-top: 5px;
   box-sizing: border-box;
   min-height: 40px;
+  margin-top: 25px;
+}
+div.hotspots div.heading.first {
+  margin-top: 30px;
 }
 div.hotspots div.heading.noicon {
   background-image: none;
