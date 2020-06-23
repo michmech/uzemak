@@ -14,6 +14,7 @@ const nicks=[
   "debata-2020-04-23",
   "verejna-projednani-2020-06",
   "systemove-pripominky",
+  "podepiste-v-luzankach",
 ];
 
 function render(req, res, nick){

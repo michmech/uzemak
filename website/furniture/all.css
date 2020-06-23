@@ -99,6 +99,7 @@ div.maepchen {
 }
 div.maepchen.homePage {
   height: 300px;
+  border-radius: 0px 4px 4px 4px;
 }
 div.maepchen.hotspotPage {
   height: 300px;
@@ -334,8 +335,7 @@ div.announce span.content a:hover {
 }
 
 div.maptitle {
-  margin-top: -10px;
-  text-align: center;
+  text-align: left;
   z-index: 1;
   position: relative;
   margin-bottom: -2px;
@@ -344,8 +344,8 @@ div.maptitle {
 div.maptitle span {
   background-color: #eeeeee;
   border: 2px solid #336699;
-  border-bottom: 2px solid #eeeeee;
-  padding: 10px 20px;
+  border-bottom: 0px;
+  padding: 10px 20px 12px 20px;
   border-radius: 10px 10px 0px 0px;
   display: inline-block;
   font-weight: bold;
