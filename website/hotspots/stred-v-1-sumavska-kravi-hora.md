@@ -1,6 +1,7 @@
 ---
 latlon: [49.20956, 16.59062]
 title: "V-1 Šumavská + Kraví Hora"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

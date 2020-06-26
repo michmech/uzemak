@@ -32,3 +32,16 @@ div.narrative.topbracket {
   padding-right: 5px;
   margin-right: -5px;
 }
+
+
+div.maptitle {
+  margin-bottom: 0px;
+}
+
+div.maptitle span {
+  background-color: #eeeeee;
+  display: block;
+  border-bottom: 2px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

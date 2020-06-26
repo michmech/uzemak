@@ -1,6 +1,7 @@
 ---
 latlon: [49.17246, 16.57501]
 title: "Be-3 Tatran Bohunice"
+mc: "Bohunice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

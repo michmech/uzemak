@@ -1,6 +1,7 @@
 ---
 latlon: [49.19619, 16.64931]
 title: "Zi-3 Gajdošova"
+mc: "Židenice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

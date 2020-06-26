@@ -39,6 +39,13 @@
     <!--my scripts-->
     <script type="text/javascript">
       const hotspots=<%-JSON.stringify(hotspots)%>;
+      const signspots=[
+        {latlon: [49.2061958, 16.6019783], title: "Punkt.", blurb: "Bayerova 7"},
+        {latlon: [49.1982575, 16.6023464], title: "Café Atlas", blurb: "Bílý dům<br/>Žerotínovo náměstí 6"},
+        {latlon: [49.1926308, 16.6083222], title: "Jazzová kavárna Podobrazy", blurb: "Tržnice<br/>Zelný trh 14"},
+        {latlon: [49.1933822, 16.6080511], title: "Nadace Veronica", blurb: "Panská 9"},
+        {latlon: [49.1873589, 16.6334306], title: "Vintage Coffee", blurb: "Charbulova 38<br/>Černovice"},
+      ];
     </script>
     <script type="text/javascript" src="/all.js"></script>
 
@@ -63,11 +70,11 @@
     <div class="envelope">
       <div class="inside">
 
-        <div class="announce">
+        <!-- <div class="announce">
           <span class="icon"><i class="fas fa-bullhorn"></i></span>
           <span class="heading">
-            <!-- <span class="intro">DEBATY</span>
-            <span class="divider">|</span> -->
+            <span class="intro">DEBATY</span>
+            <span class="divider">|</span>
             24. června 2020
             <span class="divider">|</span>
             16:00 – 19:00
@@ -77,11 +84,14 @@
           <span class="content">
             <a href="/podepiste-v-luzankach/">Podepište námitky k územnímu plánu Brna&nbsp;»</a>
           </span>
-        </div>
+        </div> -->
 
         <div class="maptitle">
-          <span>
+          <span class="current" id="tabHotspots" onclick="startMapHomepage()">
             Připomínky Otevřeného Brna k Návrhu územního plánu
+          </span>
+          <span id="tabSignspots" onclick="startMapSignspots()">
+            Podpisová místa
           </span>
         </div>
 
@@ -99,14 +109,21 @@
           </div>
           <div class="chapter">
             <div class="heading">Místní připomínky</div>
-            <%var hasPrecedent=false;%>
-            <%for(var i=0; i<hotspots.length; i++){ var hotspot=hotspots[i];%>
-                <%if(hotspot.latlon){%>
-                  <%if(hasPrecedent){%>&nbsp;|&nbsp;<%}%>
-                  <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
-                  <%hasPrecedent=true;%>
-                <%}%>
-            <%}%>
+            <div class="columns">
+              <%for(var key in hostspotsByGroup){%>
+                <div class="group">
+                  <span class="intertitle"><%=key%></span>
+                  <%var hasPrecedent=false;%>
+                  <%for(var i=0; i<hostspotsByGroup[key].length; i++){ var hotspot=hostspotsByGroup[key][i];%>
+                      <%if(hotspot.latlon){%>
+                        <%if(hasPrecedent){%>|<%}%>
+                        <a class="hotspot" href="/<%=hotspot.nick%>/"><%=hotspot.title%></a>
+                        <%hasPrecedent=true;%>
+                      <%}%>
+                  <%}%>
+                </div>
+              <%}%>
+            </div>
           </div>
           <!-- <div class="heading noicon">Poznámky mimo mapu</div>
           <%hasPrecedent=false;%>
@@ -173,6 +190,21 @@
 
           <div class="announces">
             <div class="heading">Aktuality</div>
+            <div class="announce">
+              <span class="icon"><i class="fas fa-bullhorn"></i></span>
+              <span class="heading">
+                <!-- <span class="intro">DEBATY</span>
+                <span class="divider">|</span> -->
+                24. června 2020
+                <span class="divider">|</span>
+                16:00 – 19:00
+                <span class="divider">|</span>
+                Lužánky
+              </span>
+              <span class="content">
+                <a href="/podepiste-v-luzankach/">Podepište námitky k územnímu plánu Brna&nbsp;»</a>
+              </span>
+            </div>
             <div class="announce">
               <span class="icon"><i class="fas fa-bullhorn"></i></span>
               <span class="heading">

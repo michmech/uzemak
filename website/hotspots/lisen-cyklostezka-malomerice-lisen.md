@@ -1,6 +1,7 @@
 ---
 latlon: [49.2130478, 16.6620684]
 title: "Cyklostezka Maloměřice - Líšeň"
+mc: "Líšeň"
 ---
 
 ## O jakou plochu v návrhu se jedná?

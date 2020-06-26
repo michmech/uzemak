@@ -1,6 +1,7 @@
 ---
 latlon: [49.205259, 16.7061603]
 title: "Cyklotrasa Mariánské údolí - Líšeň"
+mc: "Líšeň"
 ---
 
 ## O jakou plochu v návrhu se jedná?

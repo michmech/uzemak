@@ -1,6 +1,7 @@
 ---
 latlon: [49.17642, 16.56643]
 title: "Kampus"
+mc: "Bohunice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

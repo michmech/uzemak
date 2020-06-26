@@ -1,6 +1,7 @@
 ---
 latlon: [49.26757, 16.57253]
 title: "Územní rezerva"
+mc: "Ivanovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

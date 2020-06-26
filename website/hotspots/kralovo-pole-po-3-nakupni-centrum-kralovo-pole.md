@@ -1,6 +1,7 @@
 ---
 latlon: [49.21838, 16.60715]
 title: "Po-3 Nákupní centrum Královo pole"
+mc: "Královo Pole"
 ---
 
 ## O jakou plochu v návrhu se jedná?

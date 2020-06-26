@@ -1,6 +1,7 @@
 ---
 latlon: [49.2642, 16.57283]
 title: "I-2 Nad Bauhausem"
+mc: "Ivanovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

@@ -11,6 +11,9 @@ nicks=[
 hotspots=[
   //{nick: "", latlon: [0, 0], title: "", blurb: ""}
 ];
+hostspotsByGroup={
+  //"Královo Pole": [...]
+};
 fs.readdirSync("./hotspots/").map(filename => {
   var md=new markdown();
   md.use(attrs);
@@ -22,6 +25,8 @@ fs.readdirSync("./hotspots/").map(filename => {
     md.render(txt);
     metadata.nick=nick;
     hotspots.push(metadata);
+    if(!hostspotsByGroup[metadata.mc]) hostspotsByGroup[metadata.mc]=[];
+    hostspotsByGroup[metadata.mc].push(metadata);
   }
 });
 
@@ -39,5 +44,6 @@ function render(req, res, nick){
 module.exports={
   nicks: nicks,
   hotspots: hotspots,
+  hostspotsByGroup: hostspotsByGroup,
   render: render,
 };

@@ -1,6 +1,7 @@
 ---
 latlon: [49.19002, 16.6136]
 title: "Tr-2 Tesco za nádražím"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

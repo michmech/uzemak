@@ -1,6 +1,7 @@
 ---
 latlon: [49.18638, 16.57738]
 title: "Výstaviště"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

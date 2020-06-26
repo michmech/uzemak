@@ -84,7 +84,7 @@ const appNarrative=require("./app-narrative.js");
 
 //Home page:
 app.get("/", function(req, res){
-  res.render("home.ejs", {hotspots: appHotspot.hotspots});
+  res.render("home.ejs", {hotspots: appHotspot.hotspots, hostspotsByGroup: appHotspot.hostspotsByGroup});
 });
 
 //Hotspot page or narrative page:

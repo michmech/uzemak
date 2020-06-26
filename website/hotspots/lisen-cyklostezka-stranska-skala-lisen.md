@@ -1,6 +1,7 @@
 ---
 latlon: [49.1886276, 16.6864735]
 title: "Cyklostezka Stránská skála - Líšeň"
+mc: "Líšeň"
 ---
 
 ## O jakou plochu v návrhu se jedná?

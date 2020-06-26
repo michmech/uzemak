@@ -1,6 +1,7 @@
 ---
 latlon: [49.19218, 16.5867]
 title: "SB-3 a SB-5 5 Žlutý kopec"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

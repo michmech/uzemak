@@ -1,6 +1,7 @@
 ---
 latlon: [49.19703, 16.6713]
 title: "Zetor"
+mc: "Líšeň"
 ---
 
 ## O jakou plochu v návrhu se jedná?

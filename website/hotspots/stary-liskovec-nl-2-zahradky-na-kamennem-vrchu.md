@@ -1,6 +1,7 @@
 ---
 latlon: [49.1820705, 16.5471226]
 title: "NL-2 Zahrádky na Kamenném vrchu"
+mc: "Starý Lískovec"
 ---
 
 ## O jakou plochu v návrhu se jedná?

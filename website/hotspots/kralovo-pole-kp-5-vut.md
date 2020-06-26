@@ -1,6 +1,7 @@
 ---
 latlon: [49.22941, 16.57028]
 title: "KP-5 VUT"
+mc: "Královo Pole"
 ---
 
 ## O jakou plochu v návrhu se jedná?

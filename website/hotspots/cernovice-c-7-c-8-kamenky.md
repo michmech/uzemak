@@ -1,6 +1,7 @@
 ---
 latlon: [49.18336, 16.64533]
 title: "C-7 a C-8 Kaménky"
+mc: "Černovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

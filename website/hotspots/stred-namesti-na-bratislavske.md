@@ -1,6 +1,7 @@
 ---
 latlon: [49.1997631, 16.6170624]
 title: "Náměstí na Bratislavské"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

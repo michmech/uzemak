@@ -1,6 +1,7 @@
 ---
 latlon: [49.2271, 16.58315]
 title: "KP-4 Veřejný park, nebo soukromý sport?"
+mc: "Královo Pole"
 ---
 
 ## O jakou plochu v návrhu se jedná?

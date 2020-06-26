@@ -1,6 +1,7 @@
 ---
 latlon: [49.19806, 16.65813]
 title: "Zi-7 Viniční"
+mc: "Židenice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

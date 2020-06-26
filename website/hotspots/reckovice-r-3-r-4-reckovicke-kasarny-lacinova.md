@@ -1,6 +1,7 @@
 ---
 latlon: [49.2518333, 16.5746959]
 title: "R-3 a R-4 Řečkovické kasárny + Lacinova"
+mc: "Řečkovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

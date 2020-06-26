@@ -1,6 +1,7 @@
 ---
 latlon: [49.1847178, 16.5395306]
 title: "By-6 Achtelky"
+mc: "Bosonohy"
 ---
 
 ## O jakou plochu v návrhu se jedná?

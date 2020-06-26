@@ -1,6 +1,7 @@
 ---
 latlon: [49.1979424, 16.5975617]
 title: "MB-2 Asanace domu na Údolní"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

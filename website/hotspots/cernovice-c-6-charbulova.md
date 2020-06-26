@@ -1,6 +1,7 @@
 ---
 latlon: [49.1808419, 16.6375122]
 title: "C-6 Charbulova"
+mc: "Černovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

@@ -1,6 +1,7 @@
 ---
 latlon: [49.19709, 16.66188]
 title: "Zi-6 Malá Klajdovka"
+mc: "Židenice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

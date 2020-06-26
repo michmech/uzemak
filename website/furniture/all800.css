@@ -35,3 +35,7 @@ div.announce span.content {
 div.hotspots {
   text-align: left;
 }
+
+div.hotspots div.chapter div.columns {
+  columns: 1;
+}

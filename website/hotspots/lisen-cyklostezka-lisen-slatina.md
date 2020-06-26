@@ -1,6 +1,7 @@
 ---
 latlon: [49.1873315, 16.69332]
 title: "Cyklostezka Líšeň - Slatina"
+mc: "Líšeň"
 ---
 
 ## O jakou plochu v návrhu se jedná?

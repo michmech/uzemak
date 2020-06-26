@@ -1,6 +1,7 @@
 ---
 latlon: [49.1967181, 16.5467887]
 title: "Ke-4 a Ke 7 Borodinova, U Tescanu"
+mc: "Kohoutovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

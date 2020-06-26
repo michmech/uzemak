@@ -1,6 +1,7 @@
 ---
 latlon: [49.2359134, 16.6013405]
 title: "Sa-2 Kociánka - Na kopcích"
+mc: "Královo Pole"
 ---
 
 ## O jakou plochu v návrhu se jedná?

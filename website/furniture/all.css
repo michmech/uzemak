@@ -342,14 +342,23 @@ div.maptitle {
   font-size: 1.1em;
 }
 div.maptitle span {
-  background-color: #eeeeee;
-  border: 2px solid #336699;
+  background-color: #dddddd;
+  border: 2px solid transparent;
   border-bottom: 0px;
-  padding: 10px 20px 12px 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 10px 10px 0px 0px;
   display: inline-block;
   font-weight: bold;
   color: #666666;
+  cursor: pointer;
+}
+div.maptitle span.current {
+  background-color: #eeeeee;
+  border-color: #336699;
+  padding-bottom: 12px;
+}
+div.maptitle span:hover {
+  color: #777777;
 }
 
 div.narrative {
@@ -390,6 +399,9 @@ div.bubble div.title {
   margin-bottom: 0.25em;
   color: #000000;
 }
+div.bubble div.title.bold {
+  font-weight: bold;
+}
 div.bubble div.title a {
   color: inherit;
 }
@@ -397,6 +409,10 @@ div.bubble div.title a:hover {
   color: #336699;
 }
 div.bubble div.blurb {}
+div.bubble div.underblurb {
+  margin-top: 1em;
+  color: #999999;
+}
 
 div.formfield {
   line-height: 1.75em;
@@ -501,8 +517,8 @@ div.formsuccess div.message {
 
 div.hotspots {
   margin-top: 20px;
-  line-height: 1.75em;
-  text-align: justify;
+  line-height: 2em;
+  text-align: left;
 }
 div.hotspots div.heading {
   background-image: url(hotspot.png);
@@ -536,13 +552,25 @@ div.hotspots div.chapter span.icon {
   font-size: 1.5em;
   margin-right: 0.4em;
 }
+div.hotspots div.chapter div.columns {
+  margin-top: 15px;
+  columns: 2;
+  column-gap: 4em;
+}
+div.hotspots div.chapter div.group {
+  break-inside: avoid;
+}
 div.hotspots span.intertitle {
   font-weight: bold;
   color: #666666;
   background-color: #eeeeee;
-  padding: 3px 6px;
-  border-radius: 2px;
+  padding: 3px 12px 3px 12px;
+  border-radius: 4px;
   margin-right: 0.4em;
+  margin-left: 0.4em;
+  white-space: nowrap;
+}
+div.hotspots span.intertitle:first-child {
   margin-left: -3px;
 }
 div.hotspots a.hotspot.fat {

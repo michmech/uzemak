@@ -1,6 +1,7 @@
 ---
 latlon: [49.17621, 16.63623]
 title: "C-4 Mírová"
+mc: "Černovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

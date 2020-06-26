@@ -1,6 +1,7 @@
 ---
 latlon: [49.18002, 16.58804]
 title: "Sty-3 Červený kopec"
+mc: "Brno - Střed"
 ---
 
 ## O jakou plochu v návrhu se jedná?

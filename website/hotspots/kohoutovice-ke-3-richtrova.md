@@ -1,6 +1,7 @@
 ---
 latlon: [49.1955103, 16.5407421]
 title: "Ke-3 Richtrova"
+mc: "Kohoutovice"
 ---
 
 ## O jakou plochu v návrhu se jedná?

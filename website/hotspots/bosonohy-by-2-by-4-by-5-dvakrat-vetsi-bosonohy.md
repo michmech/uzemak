@@ -1,6 +1,7 @@
 ---
 latlon: [49.1784119, 16.5319371]
 title: "By-2, By-4, By-5 - Dvakrát větší Bosonohy"
+mc: "Bosonohy"
 ---
 
 ## O jakou plochu v návrhu se jedná?

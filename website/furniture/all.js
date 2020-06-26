@@ -23,6 +23,15 @@ const hotspotIcon=L.icon({
     shadowSize:   [50, 50],
     shadowAnchor: [25, 25],
 });
+const signspotIcon=L.icon({
+    iconUrl: '/signspot.png',
+    iconSize:     [40, 40], // size of the icon
+    iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -20], // point from which the popup should open relative to the iconAnchor
+    shadowUrl: '/hotspot-shadow.png',
+    shadowSize:   [50, 50],
+    shadowAnchor: [25, 25],
+});
 function tileLayer(){
   return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   	maxZoom: 19,
@@ -41,6 +50,9 @@ function startMapHotspot(){
 
 //sets up the map on the homepage:
 function startMapHomepage(){
+  $("#tabHotspots").addClass("current");
+  $("#tabSignspots").removeClass("current");
+  $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
   map=L.map("map").setView([49.19522267351485, 16.608066558837894], 12);
   tileLayer().addTo(map);
   var latlons=[];
@@ -63,13 +75,15 @@ function maximizeMap(){
   $("body").addClass("unscrollable");
   $(".mapContainer").addClass("maximized");
   $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
-  startMapHomepage();
+  if($("#tabHotspots").hasClass("current")) startMapHomepage();
+  if($("#tabSignspots").hasClass("current")) startMapSignspots();
 }
 function minimizeMap(){
   $("body").removeClass("unscrollable");
   $(".mapContainer").removeClass("maximized");
   $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
-  startMapHomepage();
+  if($("#tabHotspots").hasClass("current")) startMapHomepage();
+  if($("#tabSignspots").hasClass("current")) startMapSignspots();
 }
 
 //sets up the map on the form page:
@@ -102,4 +116,29 @@ function tick(){
   } else {
     $("#submit").prop("disabled", true);
   }
+}
+
+//-------------------
+
+function startMapSignspots(){
+  $("#tabSignspots").addClass("current");
+  $("#tabHotspots").removeClass("current");
+  $("#map").replaceWith('<div class="maepchen homePage" id="map"></div>');
+  map=L.map("map").setView([49.19522267351485, 16.608066558837894], 12);
+  tileLayer().addTo(map);
+  var latlons=[];
+  signspots.map(spot => {
+    if(spot.latlon){
+      latlons.push(spot.latlon);
+      var marker=L.marker(spot.latlon, {icon: signspotIcon}).addTo(map);
+      var html='<div class="bubble">';
+      html+='<div class="title bold">'+spot.title+'</div>';
+      html+='<div class="blurb">'+spot.blurb+'</div>';
+      html+='<div class="underblurb">Tady můžete podepsat připomínky Otevřeného Brna k Návrhu územního plánu.</div>';
+      html+='</div>';
+      var popup=L.popup({maxWidth: 450}).setContent(html);
+      marker.bindPopup(popup);
+    }
+  });
+  map.fitBounds(L.latLngBounds(latlons));
 }

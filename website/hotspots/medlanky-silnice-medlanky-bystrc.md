@@ -1,6 +1,7 @@
 ---
 latlon: [49.2420568, 16.5572602]
 title: "Silnice Medlánky - Bystrc"
+mc: "Medlánky"
 ---
 
 ## O jakou plochu v návrhu se jedná?
